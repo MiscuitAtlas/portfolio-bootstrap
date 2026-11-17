@@ -1,539 +1,504 @@
 <!DOCTYPE html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Accueil - Portfolio Maxence Français</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <link rel="stylesheet" href="style.css">
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' https://cdn.jsdelivr.net; font-src https://cdn.jsdelivr.net; img-src 'self' data:; connect-src 'self'; form-action https://formspree.io; base-uri 'self'; object-src 'none'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Maxence Français – Portfolio cybersécurité</title>
+    <meta name="description" content="Portfolio de Maxence Français, étudiant en Master 2 Cybersécurité – Défense des SI à l'INSA Hauts-de-France, à la recherche d'un stage de fin d'études à partir de mars 2027.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Maxence Français – Portfolio cybersécurité">
+    <meta property="og:description" content="Étudiant en Master 2 Cybersécurité, à la recherche d'un stage de fin d'études de 20 semaines à partir de mars 2027.">
+    <meta property="og:url" content="https://miscuitatlas.github.io/Portfolio_Bootstrap/">
+    <meta property="og:image" content="https://miscuitatlas.github.io/Portfolio_Bootstrap/assets/img/profil.webp">
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" integrity="sha384-PPIZEGYM1v8zp5Py7UjFb79S58UeqCL9pYVnVPURKEqvioPROaVAJKKLzvH2rDnI" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <a class="visually-hidden-focusable skip-link" href="#contenu">Aller au contenu</a>
+    <header data-partial="partials/navbar.html"></header>
 
-    </head>
-    <body class="d-flex flex-column" style="min-height: 100vh;">
-        <div class="flex-grow-1">
-            <div id="navbar"></div>
+    <main id="contenu" class="container my-5">
+        <div class="row g-4">
 
-            <main class="container mt-5">
-                <div class="row">
-                    <div class="col-12 col-md-4">
-                        <div class="card mx-auto" style="width: 100%; max-width: 24rem;">
-                            <img src="assets/Photo_profil.png" class="card-img-top mx-auto mt-3" style="width: 150px; max-width: 100%; border-radius: 8px; border: 5px solid #ddd;">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Maxence Français</h5>
-                                <p class="card-text">Étudiant en Master 2 Cybersécurité & Défense des SI à l'INSA HDF | À la recherche d’un stage de fin d'études (Mars 2027 - 20 semaines minimum) | CDI étudiant chez ALDI France</p>
-                                <p class="d-flex justify-content-center align-items-center mb-3">
-                                    <i class="fas fa-map-marker-alt" style="font-size: 20px; margin-right: 5px;"></i>
-                                    <a href="https://www.google.com/maps/search/?q=Bully-les-Mines" target="_blank" style="text-decoration: none; color: inherit;">
-                                        <span>Bully-les-Mines</span>
-                                    </a>
-                                    <i class="fas fa-birthday-cake" style="font-size: 20px; margin-left: 20px; margin-right: 5px;"></i>
-                                    <span>22 ans</span>
-                                    <i class="fas fa-id-card" style="font-size: 20px; margin-left: 20px; margin-right: 5px;"></i>
-                                    <span>Permis B</span>
-                                </p>                                 
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#motivationModal">
-                                    Voir Lettre de Motivation
-                                </button>
-                            </div>
-                        </div>
-                        <br>
-                        <a href="assets/CV_Stage_Français_Maxence.pdf" download="CV_Stage_Français_Maxence" class="btn btn-primary mt-3 d-block mx-auto" style="width: 200px;">
-                            Télécharger le CV
-                        </a>
-                    </div>
-                    
-                    <div class="col-12 col-md-8">
-                        <ul class="nav nav-tabs justify-content-end" id="portfolioTabs" role="tablist">
-                            <li class="nav-item">
-                                <button class="nav-link active" id="experience-tab" data-bs-toggle="tab" data-bs-target="#experience" type="button" role="tab">Expérience</button>
-                            </li>
-                            <li class="nav-item">
-                                <button class="nav-link" id="education-tab" data-bs-toggle="tab" data-bs-target="#education" type="button" role="tab">Éducation</button>
-                            </li>
-                            <li class="nav-item">
-                                <button class="nav-link" id="competences-tab" data-bs-toggle="tab" data-bs-target="#competences" type="button" role="tab">Compétences</button>
-                            </li>
-                            <li class="nav-item">
-                                <button class="nav-link" id="projets-tab" data-bs-toggle="tab" data-bs-target="#projets" type="button" role="tab">Projets</button>
-                            </li>
+            <!-- ============ Profil ============ -->
+            <div class="col-12 col-lg-4">
+                <section class="card shadow-sm text-center" aria-labelledby="nom">
+                    <div class="card-body">
+                        <img src="assets/img/profil.webp" alt="Photo de Maxence Français" class="profile-photo mb-3" width="360" height="436">
+                        <h1 id="nom" class="h3 card-title">Maxence Français</h1>
+                        <p class="card-text mb-2">Étudiant en <strong>Master 2 Cybersécurité – Défense des Systèmes d’Information</strong> à l’INSA Hauts-de-France</p>
+                        <p class="alert alert-primary py-2 small mb-3">
+                            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                            Recherche un <strong>stage de fin d’études</strong> de 20 semaines minimum à partir de <strong>mars 2027</strong>
+                        </p>
+                        <ul class="list-unstyled d-flex flex-wrap justify-content-center profile-facts small text-body-secondary">
+                            <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Bully-les-Mines (62)</li>
+                            <li><i class="fa-solid fa-cake-candles" aria-hidden="true"></i> 22 ans</li>
+                            <li><i class="fa-solid fa-id-card" aria-hidden="true"></i> Permis B</li>
                         </ul>
-            
-                        <div class="tab-content mt-3" id="portfolioTabsContent">
-                            <div class="tab-pane fade show active" id="experience" role="tabpanel" aria-labelledby="experience-tab">
-                                <h3>Expérience</h3>
-                                <ul class="list-group mt-3">
-                                    <li class="list-group-item position-relative">
-                                        <div class="position-absolute top-0 end-0 mt-2 me-2 bg-primary text-white px-2 py-1 rounded small">
-                                            Mars 2025 - Juin 2025
-                                        </div>
-                                        <h5><strong>Stage DSI – Développeur ASP.NET Core & IAM / SecOps</strong></h5>
-                                        <h6><strong>Groupe AHNAC, Liévin</strong></h6>
-                                        - Refonte d'application IAM & Active Directory : Développement d'une application web centralisée sous 
-                                        ASP.NET Core MVC (C# / LDAP) permettant la gestion intégrale du cycle de vie des comptes utilisateurs 
-                                        et la gestion dynamique des rôles d'accès.<br>
-                                        - Sécurisation des accès & Authentification : Implémentation du SSO (Authentification Windows), 
-                                        journalisation des actions d'administration et sécurisation des configurations sensibles 
-                                        (appsettings.json, User Secrets).<br>
-                                        - Automation de workflows : Automatisation des processus de demande d'accès (VPN, droits applicatifs) 
-                                        avec système de validation et notifications mail aux équipes support et directeurs d'établissement.<br>
-                                        - Environnement & Collaboration : Travail en synergie avec un expert .NET/C# senior dans un cadre de 
-                                        développement exigeant (secteur hospitalier).
-                                    </li>
-                                    <li class="list-group-item position-relative">
-                                        <div class="position-absolute top-0 end-0 mt-2 me-2 bg-primary text-white px-2 py-1 rounded small">
-                                            Avril 2024 - Juin 2024
-                                        </div>
-                                        <h5><strong>Stage DSI – Développeur Web & Analyste Données (SQL/HQL)</strong></h5>
-                                        <h6><strong>Groupe AHNAC, Liévin</strong></h6>
-                                        - Développement Web & Outillage Métier : Conception d'applications web internes pour le suivi de 
-                                        facturation (impayés/acquittés) et d'un outil de signalement d'incidents avec capture d'écran 
-                                        automatisée durant la migration du SI (HTML, ASP, PHP, JavaScript).<br>
-                                        - Optimisation de Bases de Données : Conception et optimisation de requêtes SQL et HQL (Hibernate) 
-                                        complexes pour le reporting médical et le traitement automatisé des clôtures de contrats.<br>
-                                        - Traitement & Migration de Données de Santé : Extraction, nettoyage et archivage automatisé de 
-                                        données patients et comptes-rendus médicaux sous contraintes strictes de confidentialité (HDS / RGPD).
-                                    </li>
-                                    <li class="list-group-item position-relative">
-                                        <div class="position-absolute top-0 end-0 mt-2 me-2 bg-primary text-white px-2 py-1 rounded small">
-                                            Depuis Octobre 2022
-                                        </div>
-                                        <h5><strong>Employé Commercial - Étudiant</strong></h5>
-                                        <h6><strong>Aldi, Bully-les-Mines</strong></h6>
-                                        - Caisse<br>
-                                        - Boulangerie<br>
-                                        - Mise en rayon<br>
-                                        - Réserve<br>
-                                    </li>
-                                    <li class="list-group-item position-relative">
-                                        <div class="position-absolute top-0 end-0 mt-2 me-2 bg-primary text-white px-2 py-1 rounded small">
-                                            Juillet 2022 - Août 2022
-                                        </div>
-                                        <h5><strong>Hôte de caisse</strong></h5>
-                                        <h6><strong>Supermarché Match, Grenay</strong></h6>
-                                        Emploi saisonnier
-                                    </li>
-                                </ul>
-                            </div>       
-                                
-                            <div class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="education-tab">
-                                <h3>Éducation</h3>
-                                <ul class="list-group mt-3">
-                                    <li class="list-group-item">
-                                        <div class="position-absolute top-0 end-0 mt-2 me-2 bg-primary text-white px-2 py-1 rounded small">
-                                            2025 - 2027
-                                        </div>
-                                        <h5><strong>Master Cybersécurité - Défense des Systèmes d’Informations</strong></h5>
-                                        <h6><strong>INSA Hauts-de-France - Université Polytechnique Hauts-de-France, Valenciennes</strong></h6>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <div class="position-absolute top-0 end-0 mt-2 me-2 bg-primary text-white px-2 py-1 rounded small">
-                                            2025
-                                        </div>
-                                        <h5><strong>Licence Professionnelle Développement de Logiciel Web et Mobile & Cyber</strong></h5>
-                                        <h6><strong>INSA Hauts-de-France - Université Polytechnique Hauts-de-France, Valenciennes</strong></h6>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <div class="position-absolute top-0 end-0 mt-2 me-2 bg-primary text-white px-2 py-1 rounded small">
-                                            2024
-                                        </div>
-                                        <h5><strong>DEUST Informatique d'Organisation et Systèmes d'Information</strong></h5>
-                                        <h6><strong>INSA Hauts-de-France - Université Polytechnique Hauts-de-France, Valenciennes</strong></h6>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <div class="position-absolute top-0 end-0 mt-2 me-2 bg-primary text-white px-2 py-1 rounded small">
-                                            2022
-                                        </div>
-                                        <h5><strong>Baccalauréat - Général</strong></h5>
-                                        <h6><strong>Lycée Henri Darras, Liévin</strong></h6>
-                                        Mention Assez Bien<br>
-                                        Spécialité Physique Chimie et Numérique et Science Informatique
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="tab-pane fade" id="competences" role="tabpanel" aria-labelledby="competences-tab">
-                                <h3>Compétences</h3>
-                                <div class="row g-3 mt-1">
-                                    <div class="col-12 col-md-6 col-lg-4">
-                                        <div class="card p-2 border-danger h-100">
-                                            <div class="card-header bg-danger text-white text-center fw-bold"><i class="fas fa-shield-alt"></i> Cybersécurité & Réseaux</div>
-                                            <ul class="list-group list-group-flush">
-                                                <li class="list-group-item p-1" data-bs-toggle="tooltip" title="Service d'annuaire et protocole d'accès aux données d'identité.">
-                                                    <i class="fas fa-sitemap text-danger"></i> Active Directory / LDAP
-                                                </li>
-                                                <li class="list-group-item p-1" data-bs-toggle="tooltip" title="Distribution Linux dédiée aux tests d'intrusion et à la sécurité informatique.">
-                                                    <i class="fab fa-linux text-dark"></i> Kali Linux
-                                                </li>
-                                                <li class="list-group-item p-1" data-bs-toggle="tooltip" title="Framework pour le développement et l'exécution d'exploits.">
-                                                    <i class="fas fa-bug text-danger"></i> Metasploit
-                                                </li>
-                                                <li class="list-group-item p-1" data-bs-toggle="tooltip" title="Outil d'exploration réseau et de balayage de ports.">
-                                                    <i class="fas fa-network-wired text-primary"></i> Nmap
-                                                </li>
-                                                <li class="list-group-item p-1" data-bs-toggle="tooltip" title="Analyseur de paquets réseau en temps réel.">
-                                                    <i class="fas fa-project-diagram text-info"></i> Wireshark
-                                                </li>
-                                                <li class="list-group-item p-1" data-bs-toggle="tooltip" title="Plateforme d'analyse numérique et d'investigation forensique.">
-                                                    <i class="fas fa-search-plus text-warning"></i> Autopsy
-                                                </li>
-                                                <li class="list-group-item p-1" data-bs-toggle="tooltip" title="Framework d'analyse forensique de la mémoire vive (RAM).">
-                                                    <i class="fas fa-memory text-secondary"></i> Volatility
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-6 col-lg-4">
-                                        <div class="card p-2 border-primary h-100">
-                                            <div class="card-header bg-primary text-white text-center fw-bold"><i class="fas fa-code"></i> Développement Web & Logiciel</div>
-                                            <ul class="list-group list-group-flush">
-                                                <li class="list-group-item p-1" data-bs-toggle="tooltip" title="Langage polyvalent utilisé en scripting, automatisation et sécurité.">
-                                                    <i class="fab fa-python text-warning"></i> Python
-                                                </li>
-                                                <li class="list-group-item p-1" data-bs-toggle="tooltip" title="Langage orienté objet moderne de l'écosystème Microsoft .NET.">
-                                                    <i class="fas fa-code text-primary"></i> C#
-                                                </li>
-                                                <li class="list-group-item p-1" data-bs-toggle="tooltip" title="Langages de programmation système performants.">
-                                                    <i class="fas fa-microchip text-secondary"></i> C / C++
-                                                </li>
-                                                <li class="list-group-item p-1" data-bs-toggle="tooltip" title="Langages standards de structuration et de mise en forme web.">
-                                                    <i class="fab fa-html5 text-danger"></i> HTML / CSS
-                                                </li>
-                                                <li class="list-group-item p-1" data-bs-toggle="tooltip" title="Langage de script côté serveur largement utilisé pour le web.">
-                                                    <i class="fab fa-php text-primary"></i> PHP
-                                                </li>
-                                                <li class="list-group-item p-1" data-bs-toggle="tooltip" title="Langage dynamique pour l'interactivité côté client.">
-                                                    <i class="fab fa-js text-warning"></i> JavaScript
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-6 col-lg-4">
-                                        <div class="card p-2 border-success h-100">
-                                            <div class="card-header bg-success text-white text-center fw-bold"><i class="fas fa-mobile-alt"></i> Développement Mobile</div>
-                                            <ul class="list-group list-group-flush">
-                                                <li class="list-group-item p-1" data-bs-toggle="tooltip" title="Langage orienté objet utilisé pour le développement Android natif.">
-                                                    <i class="fab fa-java text-danger"></i> Java
-                                                </li>
-                                                <li class="list-group-item p-1" data-bs-toggle="tooltip" title="Framework UI Google multiplateforme basé sur Dart.">
-                                                    <i class="fas fa-mobile-alt text-info"></i> Flutter
-                                                </li>
-                                                <li class="list-group-item p-1" data-bs-toggle="tooltip" title="Framework JavaScript basé sur React pour applications mobiles.">
-                                                    <i class="fab fa-react text-info"></i> React Native
-                                                </li>
-                                                <li class="list-group-item p-1" data-bs-toggle="tooltip" title="Langage moderne officiel pour le développement Android.">
-                                                    <i class="fab fa-android text-success"></i> Kotlin
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-6 col-lg-4">
-                                        <div class="card p-2 border-dark h-100">
-                                            <div class="card-header bg-dark text-white text-center fw-bold"><i class="fas fa-server"></i> Systèmes, DevOps & Scripting</div>
-                                            <ul class="list-group list-group-flush">
-                                                <li class="list-group-item p-1" data-bs-toggle="tooltip" title="Système d'exploitation Linux stable orienté serveur et sécurité.">
-                                                    <i class="fab fa-linux text-info"></i> Linux (Debian)
-                                                </li>
-                                                <li class="list-group-item p-1" data-bs-toggle="tooltip" title="Système d'exploitation serveur d'entreprise Microsoft.">
-                                                    <i class="fab fa-windows text-primary"></i> Windows Server
-                                                </li>
-                                                <li class="list-group-item p-1" data-bs-toggle="tooltip" title="Plateforme de conteneurisation d'applications.">
-                                                    <i class="fab fa-docker text-primary"></i> Docker
-                                                </li>
-                                                <li class="list-group-item p-1" data-bs-toggle="tooltip" title="Scripting shell Unix pour l'automatisation de tâches.">
-                                                    <i class="fas fa-terminal text-dark"></i> Bash / Shell
-                                                </li>
-                                                <li class="list-group-item p-1" data-bs-toggle="tooltip" title="Environnement de scripting et d'automatisation Microsoft.">
-                                                    <i class="fas fa-terminal text-primary"></i> PowerShell
-                                                </li>
-                                                <li class="list-group-item p-1" data-bs-toggle="tooltip" title="Système de contrôle de version décentralisé.">
-                                                    <i class="fab fa-git-alt text-danger"></i> Git
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-6 col-lg-4">
-                                        <div class="card p-2 border-info h-100">
-                                            <div class="card-header bg-info text-white text-center fw-bold"><i class="fas fa-layer-group"></i> Frameworks</div>
-                                            <ul class="list-group list-group-flush">
-                                                <li class="list-group-item p-1" data-bs-toggle="tooltip" title="Framework JavaScript progressif pour interfaces utilisateur.">
-                                                    <i class="fab fa-vuejs text-success"></i> Vue.js
-                                                </li>
-                                                <li class="list-group-item p-1" data-bs-toggle="tooltip" title="Environnement d'exécution JavaScript côté serveur.">
-                                                    <i class="fab fa-node text-success"></i> Node.js
-                                                </li>
-                                                <li class="list-group-item p-1" data-bs-toggle="tooltip" title="Sur-ensemble typé de JavaScript améliorant la robustesse du code.">
-                                                    <i class="fas fa-code text-secondary"></i> TypeScript
-                                                </li>
-                                                <li class="list-group-item p-1" data-bs-toggle="tooltip" title="Framework web Microsoft modulaire, performant et sécurisé.">
-                                                    <i class="fas fa-file-code text-success"></i> ASP.NET Core MVC
-                                                </li>
-                                                <li class="list-group-item p-1" data-bs-toggle="tooltip" title="Framework de développement rapide en PHP.">
-                                                    <i class="fas fa-cogs text-danger"></i> CakePHP
-                                                </li>
-                                                <li class="list-group-item p-1" data-bs-toggle="tooltip" title="Framework CSS pour la création d'interfaces adaptatives.">
-                                                    <i class="fab fa-bootstrap text-primary"></i> Bootstrap
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-6 col-lg-4">
-                                        <div class="card p-2 border-warning h-100">
-                                            <div class="card-header bg-warning text-white text-center fw-bold"><i class="fas fa-database"></i> Bases de données</div>
-                                            <ul class="list-group list-group-flush">
-                                                <li class="list-group-item p-1" data-bs-toggle="tooltip" title="Langage standard pour la gestion de bases de données relationnelles.">
-                                                    <i class="fas fa-database text-dark"></i> SQL
-                                                </li>
-                                                <li class="list-group-item p-1" data-bs-toggle="tooltip" title="Langage de requête objet du framework ORM Hibernate.">
-                                                    <i class="fas fa-search text-danger"></i> HQL
-                                                </li>
-                                                <li class="list-group-item p-1" data-bs-toggle="tooltip" title="Système de gestion de bases de données relationnelles SQL.">
-                                                    <i class="fas fa-server text-primary"></i> MySQL
-                                                </li>
-                                                <li class="list-group-item p-1" data-bs-toggle="tooltip" title="Moteur de base de données relationnelle léger et autonome.">
-                                                    <i class="fas fa-hdd text-secondary"></i> SQLite
-                                                </li>
-                                                <li class="list-group-item p-1" data-bs-toggle="tooltip" title="Base de données NoSQL orientée documents JSON/BSON.">
-                                                    <i class="fas fa-leaf text-success"></i> MongoDB
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="projets" role="tabpanel" aria-labelledby="projets-tab">
-                                <h3>Projets</h3>
-                                <div id="projectsCarousel" class="carousel slide mt-3" data-bs-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <div class="d-flex flex-wrap justify-content-between">
-                                                <img src="assets/Connexion_EG.png" class="d-block img-fluid mb-3" style="max-width: 100%;" alt="Connexion">
-                                                <img src="assets/Inscription_EG.png" class="d-block img-fluid mb-3" style="max-width: 100%;" alt="Inscription">
-                                                <img src="assets/Jeux_EG.png" class="d-block img-fluid mb-3" style="max-width: 100%;" alt="Interface de Jeu">
-                                                <img src="assets/Accueil_EG.png" class="d-block img-fluid mb-3" style="max-width: 100%;" alt="Accueil Escape Game">
-                                            </div>
-                                            <div class="carousel-caption d-flex align-items-center justify-content-center">
-                                                <div class="projets-caption p-3 text-center">
-                                                    <h5>Jeux d'Escape Game en Ligne</h5>
-                                                    <p>
-                                                        Ce projet est un mini-jeu de type Escape Game en ligne, développé avec Vue.js. Il propose plusieurs scénarios 
-                                                        et niveaux de difficulté. Chaque scénario offre des énigmes uniques à résoudre dans un temps limité.
-                                                        <br>➡️ Code source disponible
-                                                        <a href="https://github.com/MiscuitAtlas/EscapeGame_VueJS" target="_blank">ici</a>.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>    
-                                        
-                                        <div class="carousel-item">
-                                            <div class="d-flex flex-wrap justify-content-between">
-                                                <img src="assets/Jeu_2048.png" class="d-block img-fluid mb-3" style="max-width: 32%;" alt="Projet Flutter">
-                                                <img src="assets/Regles_2048.png" class="d-block img-fluid mb-3" style="max-width: 32%;" alt="Projet Flutter">
-                                                <img src="assets/Parametres_2048.png" class="d-block img-fluid mb-3" style="max-width: 32%;" alt="Projet Flutter">
-                                            </div>
-                                            <div class="carousel-caption d-flex align-items-center justify-content-center">
-                                                <div class="projets-caption p-3 text-center">
-                                                    <h5>Jeu du 2048</h5>
-                                                    <p>
-                                                        Un jeu de type 2048 développé en Flutter, offrant une interface fluide et plusieurs fonctionnalités 
-                                                        comme la gestion des scores et des paramètres personnalisables. Glissez les tuiles pour les fusionner 
-                                                        et atteindre la fameuse case 2048 !
-                                                        <br>➡️ Code source disponible
-                                                        <a href="https://github.com/MiscuitAtlas/Jeu_2048_Flutter" target="_blank">ici</a>.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="carousel-item">
-                                            <div class="d-flex flex-wrap justify-content-between">
-                                                <img src="assets/Accueil_superheros.png" class="d-block img-fluid mb-3" style="max-width: 100%;" alt="Projet Vue.js">
-                                                <img src="assets/Liste_superheros.png" class="d-block img-fluid mb-3" style="max-width: 100%;" alt="Projet Vue.js">
-                                                <img src="assets/Detail_superheros.png" class="d-block img-fluid mb-3" style="max-width: 100%;" alt="Projet Vue.js">
-                                                <img src="assets/Matcher_superheros.png" class="d-block img-fluid mb-3" style="max-width: 100%;" alt="Projet Vue.js">
-                                            </div>
-                                            <div class="carousel-caption d-flex align-items-center justify-content-center">
-                                                <div class="projets-caption p-3 text-center">
-                                                    <h5>SuperHeros</h5>
-                                                    <p>
-                                                        Application en Vue.js permettant de rechercher et comparer des super-héros en fonction de leurs statistiques. 
-                                                        Utilise une API pour récupérer les informations et offre une interface intuitive pour explorer les capacités de 
-                                                        vos héros préférés.
-                                                        <br>➡️ Code source disponible
-                                                        <a href="https://github.com/MiscuitAtlas/SuperHeros_VueJS" target="_blank">ici</a>.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                            
-                                        <div class="carousel-item">
-                                            <div class="d-flex flex-wrap justify-content-between">
-                                                <img src="assets/Accueil_VC.png" class="d-block img-fluid mb-3" style="max-width: 100%;" alt="Accueil">
-                                                <img src="assets/Rechercher_VC.png" class="d-block img-fluid mb-3" style="max-width: 100%;" alt="Rechercher">
-                                                <img src="assets/Proposer_VC.png" class="d-block img-fluid mb-3" style="max-width: 100%;" alt="Proposer">
-                                            </div>
-                                            <div class="carousel-caption d-flex align-items-center justify-content-center">
-                                                <div class="projets-caption p-3 text-center">
-                                                    <h5>Vacances Connectées</h5>
-                                                    <p>
-                                                        Vacances Connectées est une plateforme collaborative permettant aux utilisateurs de rechercher, proposer et 
-                                                        partager des activités de vacances. Ce projet met l’accent sur l’expérience utilisateur avec une interface moderne 
-                                                        et intuitive.
-                                                        <br>➡️ Code source disponible
-                                                        <a href="https://github.com/MiscuitAtlas/VacancesConnectees" target="_blank">ici</a>.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="carousel-item">
-                                            <div class="d-flex flex-wrap justify-content-between">
-                                                <img src="assets/TachesAll_ToDoList.png" class="d-block img-fluid mb-3" alt="Projet Flutter">
-                                                <img src="assets/TachesFini_ToDoList.png" class="d-block img-fluid mb-3" alt="Projet Flutter">
-                                                <img src="assets/TachesNonFini_ToDoList.png" class="d-block img-fluid mb-3" alt="Projet Flutter">
-                                            </div>
-                                            <div class="carousel-caption d-flex align-items-center justify-content-center">
-                                                <div class="projets-caption p-3 text-center">
-                                                    <h5>To Do List</h5>
-                                                    <p>
-                                                        Une application en JavaScript permettant d'organiser efficacement ses tâches. Ajoutez, 
-                                                        supprimez et marquez les tâches comme terminées avec une interface simple et efficace.
-                                                        <br>➡️ Code source disponible
-                                                        <a href="https://github.com/MiscuitAtlas/Taches_JavaScript" target="_blank">ici</a>.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                            
-                                        <div class="carousel-item">
-                                            <div class="d-flex justify-content-center">
-                                                <img src="assets/Messagerie_Javascript.png" class="d-block img-fluid mb-3" alt="Projet Flutter">
-                                            </div>
-                                            <div class="carousel-caption d-flex align-items-center justify-content-center">
-                                                <div class="projets-caption p-3 text-center">
-                                                    <h5>Messagerie</h5>
-                                                    <p>
-                                                        Projet de messagerie en JavaScript qui permet d’envoyer et recevoir des messages en temps réel. 
-                                                        Il offre une interface conviviale et une gestion efficace des conversations.
-                                                        <br>➡️ Code source disponible
-                                                        <a href="https://github.com/MiscuitAtlas/Messagerie_JavaScript" target="_blank">ici</a>.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                            
-                                    <div class="carousel-control-container mt-3 d-flex justify-content-between">
-                                        <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        </button>
-                                        <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>                            
+                        <div class="d-grid gap-2 profile-actions">
+                            <a href="assets/docs/CV_Maxence_Francais.pdf" download="CV_Maxence_Francais.pdf" class="btn btn-primary">
+                                <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i> Télécharger le CV (PDF)
+                            </a>
+                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#motivationModal">
+                                <i class="fa-solid fa-envelope-open-text" aria-hidden="true"></i> Lire ma lettre de motivation
+                            </button>
+                            <a href="contact.html" class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Me contacter
+                            </a>
                         </div>
                     </div>
-                </div>                             
-            </main>
+                </section>
+            </div>
 
-            <div class="modal fade" id="motivationModal" tabindex="-1" aria-labelledby="motivationModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="motivationModalLabel">Lettre de Motivation</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <p>Madame, Monsieur,</p>
-                            <p>
-                                Actuellement étudiant en deuxième année de Master Cybersécurité – Défense des Systèmes d’Information à 
-                                l’INSA Hauts-de-France - Université Polytechnique Hauts-de-France, je suis à la recherche d’un stage de 
-                                fin d’études d’une durée de 20 semaines minimum, à compter de mars 2027.
-                            </p>
-                            <p>
-                                Au cours de mon parcours académique et de mes expériences professionnelles au sein de la Direction des 
-                                Systèmes d’Information et du Numérique (DSIN) du Groupe AHNAC, j’ai développé une solide expertise à la 
-                                croisée de la sécurité des systèmes d’information, de la gestion des identités (IAM) et du développement 
-                                sécurisé.
-                            </p>
-                            <p>
-                                Mes stages m'ont permis d'intervenir sur des projets critiques au sein d'un environnement hospitalier exigeant :
-                               <ul>
-                                    <li><strong>Gestion des Accès et IAM :</strong> Conception et refonte d'une application web centralisée 
-                                        sous ASP.NET Core (C# / LDAP) pour gérer l'annuaire Active Directory, sécuriser la configuration 
-                                        (User Secrets), mettre en place l'authentification SSO et automatiser les workflows d'habilitation 
-                                        (VPN, droits applicatifs).</li>
-                                    <li><strong>Bases de Données & Outils Métier :</strong> Optimisation de requêtes SQL/HQL complexes, 
-                                        traitement sécurisé de données de santé (HDS / RGPD) et développement d'applications web de suivi 
-                                        métier (ASP, PHP, JavaScript) lors de phases de migration du SI.</li>
+            <!-- ============ Onglets ============ -->
+            <div class="col-12 col-lg-8">
+                <ul class="nav nav-tabs" id="portfolioTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="experience-tab" data-bs-toggle="tab" data-bs-target="#experience" type="button" role="tab" aria-controls="experience" aria-selected="true">Expérience</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="formation-tab" data-bs-toggle="tab" data-bs-target="#formation" type="button" role="tab" aria-controls="formation" aria-selected="false">Formation</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="competences-tab" data-bs-toggle="tab" data-bs-target="#competences" type="button" role="tab" aria-controls="competences" aria-selected="false">Compétences</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="projets-tab" data-bs-toggle="tab" data-bs-target="#projets" type="button" role="tab" aria-controls="projets" aria-selected="false">Projets</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content pt-4" id="portfolioTabsContent">
+
+                    <!-- ----- Expérience ----- -->
+                    <section class="tab-pane fade show active" id="experience" role="tabpanel" aria-labelledby="experience-tab" tabindex="0">
+                        <h2 class="visually-hidden">Expérience</h2>
+                        <ol class="list-group">
+                            <li class="list-group-item timeline-item p-3">
+                                <span class="badge text-bg-primary mb-2">Mars 2025 – Juin 2025</span>
+                                <h3>Stage DSI – Développeur ASP.NET Core &amp; IAM / SecOps</h3>
+                                <p class="lieu mb-2">Groupe AHNAC, Liévin</p>
+                                <ul>
+                                    <li><strong>Refonte d’application IAM &amp; Active Directory :</strong> développement d’une application web centralisée sous ASP.NET Core MVC (C# / LDAP) pour gérer tout le cycle de vie des comptes utilisateurs et les rôles d’accès.</li>
+                                    <li><strong>Sécurisation des accès &amp; authentification :</strong> SSO (authentification Windows), journalisation des actions d’administration et sécurisation des configurations sensibles (appsettings.json, User Secrets).</li>
+                                    <li><strong>Automatisation de workflows :</strong> processus de demande d’accès (VPN, droits applicatifs) avec circuit de validation et notifications par e-mail aux équipes support et aux directeurs d’établissement.</li>
+                                    <li><strong>Environnement :</strong> travail aux côtés d’un expert .NET / C# senior, dans le secteur hospitalier.</li>
                                 </ul>
-                            </p>
-                            <p>
-                                En parallèle, ma formation en Master m'apporte des compétences pratiques poussées en cyberdéfense, tests 
-                                d'intrusion (Pentest), analyse forensique, cryptographie, administration d'infrastructures sécurisées 
-                                (Kali Linux, Metasploit, Wireshark, Volatility, Autopsy) ainsi qu'à relever des challenges techniques 
-                                tels que les Crackme.
-                            <p>
-                                Rigoureux, autonome et passionné par les enjeux de sécurité et de résilience des infrastructures 
-                                informatiques, je souhaite intégrer une équipe pour contribuer activement à la protection et à 
-                                l'optimisation des systèmes d'information.
-                            </p>
-                            <p>
-                                Je reste à votre entière disposition pour échanger de vive voix sur mon profil et sur la manière dont je 
-                                pourrai m'investir au sein de votre entreprise. Je vous prie d’agréer, Madame, Monsieur, l’expression 
-                                de mes salutations distinguées.
-                            </p>
-                            <p class="signature">
-                                Cordialement,<br>
-                                <strong>Maxence Français</strong><br>
-                                <span>Étudiant en Master 2 Cybersécurité</span>
-                            </p>
+                            </li>
+                            <li class="list-group-item timeline-item p-3">
+                                <span class="badge text-bg-primary mb-2">Avril 2024 – Juin 2024</span>
+                                <h3>Stage DSI – Développeur Web &amp; Analyste Données (SQL / HQL)</h3>
+                                <p class="lieu mb-2">Groupe AHNAC, Liévin</p>
+                                <ul>
+                                    <li><strong>Développement web &amp; outils métier :</strong> applications web internes de suivi de facturation (impayés / acquittés) et outil de signalement d’incidents avec capture d’écran automatique pendant la migration du SI (HTML, ASP, PHP, JavaScript).</li>
+                                    <li><strong>Optimisation de bases de données :</strong> requêtes SQL et HQL (Hibernate) complexes pour le reporting médical et le traitement automatisé des clôtures de contrats.</li>
+                                    <li><strong>Données de santé :</strong> extraction, nettoyage et archivage automatisé de données patients et de comptes rendus médicaux, sous contraintes strictes de confidentialité (HDS / RGPD).</li>
+                                </ul>
+                            </li>
+                            <li class="list-group-item timeline-item p-3">
+                                <span class="badge text-bg-primary mb-2">Depuis octobre 2022</span>
+                                <h3>Employé commercial – CDI étudiant</h3>
+                                <p class="lieu mb-2">ALDI, Bully-les-Mines</p>
+                                <p class="mb-0">Caisse, boulangerie, mise en rayon et réserve.</p>
+                            </li>
+                            <li class="list-group-item timeline-item p-3">
+                                <span class="badge text-bg-primary mb-2">Juillet 2022 – Août 2022</span>
+                                <h3>Hôte de caisse – Emploi saisonnier</h3>
+                                <p class="lieu mb-0">Supermarché Match, Grenay</p>
+                            </li>
+                        </ol>
+                    </section>
 
-                            <address class="contact-info">
-                                📧 <a href="mailto:maxencefran@gmail.com">maxencefran@gmail.com</a> | 📞 07 82 92 46 41<br>
-                                📍 Bully-les-Mines, Hauts-de-France
-                            </address>
+                    <!-- ----- Formation ----- -->
+                    <section class="tab-pane fade" id="formation" role="tabpanel" aria-labelledby="formation-tab" tabindex="0">
+                        <h2 class="visually-hidden">Formation</h2>
+                        <ol class="list-group">
+                            <li class="list-group-item timeline-item p-3">
+                                <span class="badge text-bg-primary mb-2">2025 – 2027</span>
+                                <h3>Master Cybersécurité – Défense des Systèmes d’Information</h3>
+                                <p class="lieu mb-0">INSA Hauts-de-France – Université Polytechnique Hauts-de-France, Valenciennes</p>
+                            </li>
+                            <li class="list-group-item timeline-item p-3">
+                                <span class="badge text-bg-primary mb-2">2025</span>
+                                <h3>Licence professionnelle Développement de Logiciel Web et Mobile &amp; Cyber</h3>
+                                <p class="lieu mb-0">INSA Hauts-de-France – Université Polytechnique Hauts-de-France, Valenciennes</p>
+                            </li>
+                            <li class="list-group-item timeline-item p-3">
+                                <span class="badge text-bg-primary mb-2">2024</span>
+                                <h3>DEUST Informatique d’Organisation et Systèmes d’Information</h3>
+                                <p class="lieu mb-0">INSA Hauts-de-France – Université Polytechnique Hauts-de-France, Valenciennes</p>
+                            </li>
+                            <li class="list-group-item timeline-item p-3">
+                                <span class="badge text-bg-primary mb-2">2022</span>
+                                <h3>Baccalauréat général – Mention Assez Bien</h3>
+                                <p class="lieu mb-1">Lycée Henri Darras, Liévin</p>
+                                <p class="mb-0">Spécialités Physique-Chimie et Numérique et Sciences Informatiques</p>
+                            </li>
+                        </ol>
+                    </section>
+
+                    <!-- ----- Compétences ----- -->
+                    <section class="tab-pane fade" id="competences" role="tabpanel" aria-labelledby="competences-tab" tabindex="0">
+                        <h2 class="visually-hidden">Compétences</h2>
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-3">
+                            <div class="col">
+                                <div class="card skill-card border-danger h-100">
+                                    <h3 class="card-header h6 text-bg-danger"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Cybersécurité &amp; Réseaux</h3>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item" data-bs-toggle="tooltip" data-bs-title="Service d’annuaire et protocole d’accès aux données d’identité"><i class="fa-solid fa-sitemap text-danger" aria-hidden="true"></i> Active Directory / LDAP</li>
+                                        <li class="list-group-item" data-bs-toggle="tooltip" data-bs-title="Distribution Linux dédiée aux tests d’intrusion"><i class="fa-brands fa-linux" aria-hidden="true"></i> Kali Linux</li>
+                                        <li class="list-group-item" data-bs-toggle="tooltip" data-bs-title="Framework de développement et d’exécution d’exploits"><i class="fa-solid fa-bug text-danger" aria-hidden="true"></i> Metasploit</li>
+                                        <li class="list-group-item" data-bs-toggle="tooltip" data-bs-title="Exploration réseau et balayage de ports"><i class="fa-solid fa-network-wired text-primary" aria-hidden="true"></i> Nmap</li>
+                                        <li class="list-group-item" data-bs-toggle="tooltip" data-bs-title="Analyse de paquets réseau"><i class="fa-solid fa-diagram-project text-info" aria-hidden="true"></i> Wireshark</li>
+                                        <li class="list-group-item" data-bs-toggle="tooltip" data-bs-title="Investigation numérique (forensique disque)"><i class="fa-solid fa-magnifying-glass-plus text-warning" aria-hidden="true"></i> Autopsy</li>
+                                        <li class="list-group-item" data-bs-toggle="tooltip" data-bs-title="Analyse forensique de la mémoire vive"><i class="fa-solid fa-memory text-secondary" aria-hidden="true"></i> Volatility</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card skill-card border-primary h-100">
+                                    <h3 class="card-header h6 text-bg-primary"><i class="fa-solid fa-code" aria-hidden="true"></i> Développement Web &amp; Logiciel</h3>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item" data-bs-toggle="tooltip" data-bs-title="Scripting, automatisation et sécurité"><i class="fa-brands fa-python text-warning" aria-hidden="true"></i> Python</li>
+                                        <li class="list-group-item" data-bs-toggle="tooltip" data-bs-title="Langage objet de l’écosystème .NET"><i class="fa-solid fa-code text-primary" aria-hidden="true"></i> C#</li>
+                                        <li class="list-group-item" data-bs-toggle="tooltip" data-bs-title="Programmation système"><i class="fa-solid fa-microchip text-secondary" aria-hidden="true"></i> C / C++</li>
+                                        <li class="list-group-item" data-bs-toggle="tooltip" data-bs-title="Structure et mise en forme des pages web"><i class="fa-brands fa-html5 text-danger" aria-hidden="true"></i> HTML / CSS</li>
+                                        <li class="list-group-item" data-bs-toggle="tooltip" data-bs-title="Langage serveur pour le web"><i class="fa-brands fa-php text-primary" aria-hidden="true"></i> PHP</li>
+                                        <li class="list-group-item" data-bs-toggle="tooltip" data-bs-title="Interactivité côté navigateur"><i class="fa-brands fa-js text-warning" aria-hidden="true"></i> JavaScript</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card skill-card border-success h-100">
+                                    <h3 class="card-header h6 text-bg-success"><i class="fa-solid fa-mobile-screen" aria-hidden="true"></i> Développement Mobile</h3>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item" data-bs-toggle="tooltip" data-bs-title="Développement Android natif"><i class="fa-brands fa-java text-danger" aria-hidden="true"></i> Java</li>
+                                        <li class="list-group-item" data-bs-toggle="tooltip" data-bs-title="Framework multiplateforme de Google (Dart)"><i class="fa-solid fa-mobile-screen text-info" aria-hidden="true"></i> Flutter</li>
+                                        <li class="list-group-item" data-bs-toggle="tooltip" data-bs-title="Applications mobiles en JavaScript / React"><i class="fa-brands fa-react text-info" aria-hidden="true"></i> React Native</li>
+                                        <li class="list-group-item" data-bs-toggle="tooltip" data-bs-title="Langage officiel d’Android"><i class="fa-brands fa-android text-success" aria-hidden="true"></i> Kotlin</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card skill-card border-dark h-100">
+                                    <h3 class="card-header h6 text-bg-dark"><i class="fa-solid fa-server" aria-hidden="true"></i> Systèmes, DevOps &amp; Scripting</h3>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item" data-bs-toggle="tooltip" data-bs-title="Distribution Linux orientée serveur"><i class="fa-brands fa-linux" aria-hidden="true"></i> Linux (Debian)</li>
+                                        <li class="list-group-item" data-bs-toggle="tooltip" data-bs-title="Système serveur Microsoft"><i class="fa-brands fa-windows text-primary" aria-hidden="true"></i> Windows Server</li>
+                                        <li class="list-group-item" data-bs-toggle="tooltip" data-bs-title="Conteneurisation d’applications"><i class="fa-brands fa-docker text-primary" aria-hidden="true"></i> Docker</li>
+                                        <li class="list-group-item" data-bs-toggle="tooltip" data-bs-title="Automatisation sous Unix"><i class="fa-solid fa-terminal" aria-hidden="true"></i> Bash / Shell</li>
+                                        <li class="list-group-item" data-bs-toggle="tooltip" data-bs-title="Automatisation sous Windows"><i class="fa-solid fa-terminal text-primary" aria-hidden="true"></i> PowerShell</li>
+                                        <li class="list-group-item" data-bs-toggle="tooltip" data-bs-title="Gestion de versions"><i class="fa-brands fa-git-alt text-danger" aria-hidden="true"></i> Git</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card skill-card border-info h-100">
+                                    <h3 class="card-header h6 text-bg-info"><i class="fa-solid fa-layer-group" aria-hidden="true"></i> Frameworks</h3>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item" data-bs-toggle="tooltip" data-bs-title="Framework JavaScript d’interfaces"><i class="fa-brands fa-vuejs text-success" aria-hidden="true"></i> Vue.js</li>
+                                        <li class="list-group-item" data-bs-toggle="tooltip" data-bs-title="JavaScript côté serveur"><i class="fa-brands fa-node-js text-success" aria-hidden="true"></i> Node.js</li>
+                                        <li class="list-group-item" data-bs-toggle="tooltip" data-bs-title="JavaScript typé"><i class="fa-solid fa-code text-secondary" aria-hidden="true"></i> TypeScript</li>
+                                        <li class="list-group-item" data-bs-toggle="tooltip" data-bs-title="Framework web Microsoft"><i class="fa-solid fa-file-code text-success" aria-hidden="true"></i> ASP.NET Core MVC</li>
+                                        <li class="list-group-item" data-bs-toggle="tooltip" data-bs-title="Framework PHP MVC"><i class="fa-solid fa-gears text-danger" aria-hidden="true"></i> CakePHP</li>
+                                        <li class="list-group-item" data-bs-toggle="tooltip" data-bs-title="Framework CSS responsive"><i class="fa-brands fa-bootstrap text-primary" aria-hidden="true"></i> Bootstrap</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card skill-card border-warning h-100">
+                                    <h3 class="card-header h6 text-bg-warning"><i class="fa-solid fa-database" aria-hidden="true"></i> Bases de données</h3>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item" data-bs-toggle="tooltip" data-bs-title="Langage des bases relationnelles"><i class="fa-solid fa-database" aria-hidden="true"></i> SQL</li>
+                                        <li class="list-group-item" data-bs-toggle="tooltip" data-bs-title="Langage de requête d’Hibernate"><i class="fa-solid fa-magnifying-glass text-danger" aria-hidden="true"></i> HQL</li>
+                                        <li class="list-group-item" data-bs-toggle="tooltip" data-bs-title="Base de données relationnelle"><i class="fa-solid fa-server text-primary" aria-hidden="true"></i> MySQL</li>
+                                        <li class="list-group-item" data-bs-toggle="tooltip" data-bs-title="Base relationnelle légère et embarquée"><i class="fa-solid fa-hard-drive text-secondary" aria-hidden="true"></i> SQLite</li>
+                                        <li class="list-group-item" data-bs-toggle="tooltip" data-bs-title="Base NoSQL orientée documents"><i class="fa-solid fa-leaf text-success" aria-hidden="true"></i> MongoDB</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    </section>
+
+                    <!-- ----- Projets ----- -->
+                    <section class="tab-pane fade" id="projets" role="tabpanel" aria-labelledby="projets-tab" tabindex="0">
+                        <h2 class="visually-hidden">Projets</h2>
+                        <p class="text-body-secondary small">Cliquez sur une image pour voir toutes les captures d’écran du projet.</p>
+
+                        <!-- Cybersécurité -->
+                        <h3 class="section-subtitle mt-2 mb-3">Cybersécurité</h3>
+                        <div class="row row-cols-1 g-4 mb-5">
+                            <article class="col">
+                                <div class="card h-100 project-card shadow-sm">
+                                    <button type="button" class="project-cover-btn" data-gallery-title="Assistant RAG cybersécurité (MITRE ATT&amp;CK + NVD)"
+                                        data-gallery='[{"src":"assets/img/projets/rag-resultats.webp","alt":"Résultats : score de 0,85 pour le RAG contre 0,40 pour le LLM seul"},{"src":"assets/img/projets/rag-demo.webp","alt":"Interface Streamlit : question, réponse et sources"},{"src":"assets/img/projets/rag-cas-usage.webp","alt":"Recherche exacte d’une CVE dans le terminal"}]'>
+                                        <img src="assets/img/projets/rag-resultats.webp" alt="Diapositive des résultats du projet RAG" class="project-cover" width="1600" height="900" loading="lazy">
+                                        <span class="project-cover-hint"><i class="fa-solid fa-images" aria-hidden="true"></i> 3 captures</span>
+                                    </button>
+                                    <div class="card-body">
+                                        <h4 class="h5 card-title">Assistant RAG cybersécurité – MITRE ATT&amp;CK + NVD</h4>
+                                        <ul class="tech-badges mb-3">
+                                            <li>Python</li><li>FAISS</li><li>BM25</li><li>Mistral (Ollama)</li><li>Streamlit</li>
+                                        </ul>
+                                        <p class="card-text">
+                                            Assistant de questions-réponses sur les techniques MITRE ATT&amp;CK et les CVE du NVD, avec un LLM exécuté en local.
+                                            Il combine recherche exacte des identifiants, recherche vectorielle et recherche hybride BM25.
+                                            Sur 20 questions d’évaluation, il obtient un score de couverture de <strong>0,85</strong>, contre 0,40 pour le LLM seul.
+                                        </p>
+                                        <p class="card-text small text-body-secondary mb-0">Projet de Master 1, réalisé en binôme.</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-0 pt-0 pb-3">
+                                        <a class="btn btn-sm btn-primary" href="https://github.com/MiscuitAtlas/rag-cyber-mitre-nvd" target="_blank" rel="noopener noreferrer">
+                                            <i class="fa-brands fa-github" aria-hidden="true"></i> Code et compte rendu
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
                         </div>
-                    </div>
+
+                        <!-- Web et mobile -->
+                        <h3 class="section-subtitle mb-3">Développement web et mobile</h3>
+                        <div class="row row-cols-1 row-cols-md-2 g-4 mb-5">
+                            <article class="col">
+                                <div class="card h-100 project-card shadow-sm">
+                                    <button type="button" class="project-cover-btn" data-gallery-title="Escape Game en ligne"
+                                        data-gallery='[{"src":"assets/img/projets/escape-game-jeux.webp","alt":"Choix de l’escape game et historique des parties"},{"src":"assets/img/projets/escape-game-accueil.webp","alt":"Page d’accueil"},{"src":"assets/img/projets/escape-game-connexion.webp","alt":"Page de connexion"},{"src":"assets/img/projets/escape-game-inscription.webp","alt":"Page d’inscription"}]'>
+                                        <img src="assets/img/projets/escape-game-jeux.webp" alt="Écran de choix des escape games" class="project-cover" width="1600" height="792" loading="lazy">
+                                        <span class="project-cover-hint"><i class="fa-solid fa-images" aria-hidden="true"></i> 4 captures</span>
+                                    </button>
+                                    <div class="card-body">
+                                        <h4 class="h5 card-title">Escape Game en ligne</h4>
+                                        <ul class="tech-badges mb-3">
+                                            <li>Vue.js</li><li>PHP</li><li>MySQL</li>
+                                        </ul>
+                                        <p class="card-text mb-0">
+                                            Trois escape games à résoudre en temps limité, avec comptes utilisateurs, classement des meilleurs scores et historique des parties.
+                                        </p>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-0 pt-0 pb-3">
+                                        <a class="btn btn-sm btn-primary" href="https://github.com/MiscuitAtlas/EscapeGame_VueJS" target="_blank" rel="noopener noreferrer">
+                                            <i class="fa-brands fa-github" aria-hidden="true"></i> Code source
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="col">
+                                <div class="card h-100 project-card shadow-sm">
+                                    <button type="button" class="project-cover-btn" data-gallery-title="Vacances Connectées"
+                                        data-gallery='[{"src":"assets/img/projets/vacances-accueil.webp","alt":"Page d’accueil et logements populaires"},{"src":"assets/img/projets/vacances-rechercher.webp","alt":"Recherche de logement"},{"src":"assets/img/projets/vacances-proposer.webp","alt":"Proposer un logement"}]'>
+                                        <img src="assets/img/projets/vacances-accueil.webp" alt="Page d’accueil de Vacances Connectées" class="project-cover" width="1600" height="722" loading="lazy">
+                                        <span class="project-cover-hint"><i class="fa-solid fa-images" aria-hidden="true"></i> 3 captures</span>
+                                    </button>
+                                    <div class="card-body">
+                                        <h4 class="h5 card-title">Vacances Connectées</h4>
+                                        <p class="card-text mb-0">
+                                            Plateforme collaborative pour rechercher, proposer et partager des logements et des activités de vacances.
+                                        </p>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-0 pt-0 pb-3">
+                                        <a class="btn btn-sm btn-primary" href="https://github.com/MiscuitAtlas/VacancesConnectees" target="_blank" rel="noopener noreferrer">
+                                            <i class="fa-brands fa-github" aria-hidden="true"></i> Code source
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="col">
+                                <div class="card h-100 project-card shadow-sm">
+                                    <button type="button" class="project-cover-btn" data-gallery-title="SuperHéros"
+                                        data-gallery='[{"src":"assets/img/projets/superheros-liste.webp","alt":"Liste des super-héros et de leurs pouvoirs"},{"src":"assets/img/projets/superheros-accueil.webp","alt":"Page d’accueil"},{"src":"assets/img/projets/superheros-detail.webp","alt":"Fiche détaillée d’un super-héros"},{"src":"assets/img/projets/superheros-matcher.webp","alt":"Comparateur de pouvoirs"}]'>
+                                        <img src="assets/img/projets/superheros-liste.webp" alt="Liste des super-héros" class="project-cover" width="1600" height="791" loading="lazy">
+                                        <span class="project-cover-hint"><i class="fa-solid fa-images" aria-hidden="true"></i> 4 captures</span>
+                                    </button>
+                                    <div class="card-body">
+                                        <h4 class="h5 card-title">SuperHéros</h4>
+                                        <ul class="tech-badges mb-3">
+                                            <li>Vue.js 3</li><li>API REST</li>
+                                        </ul>
+                                        <p class="card-text mb-0">
+                                            Rechercher, consulter et comparer des super-héros selon leurs statistiques, à partir d’une API publique.
+                                        </p>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap gap-2">
+                                        <a class="btn btn-sm btn-primary" href="https://github.com/MiscuitAtlas/SuperHeros_VueJS" target="_blank" rel="noopener noreferrer">
+                                            <i class="fa-brands fa-github" aria-hidden="true"></i> Code source
+                                        </a>
+                                        <a class="btn btn-sm btn-outline-primary" href="https://miscuitatlas.github.io/SuperHeros_VueJS/" target="_blank" rel="noopener noreferrer">
+                                            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Démo en ligne
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="col">
+                                <div class="card h-100 project-card shadow-sm">
+                                    <button type="button" class="project-cover-btn" data-gallery-title="Jeu du 2048"
+                                        data-gallery='[{"src":"assets/img/projets/2048-jeu.webp","alt":"Partie en cours"},{"src":"assets/img/projets/2048-regles.webp","alt":"Règles du jeu"},{"src":"assets/img/projets/2048-parametres.webp","alt":"Paramètres de la partie"}]'>
+                                        <img src="assets/img/projets/2048-jeu.webp" alt="Partie de 2048 sur téléphone" class="project-cover project-cover--contain" width="318" height="712" loading="lazy">
+                                        <span class="project-cover-hint"><i class="fa-solid fa-images" aria-hidden="true"></i> 3 captures</span>
+                                    </button>
+                                    <div class="card-body">
+                                        <h4 class="h5 card-title">Jeu du 2048</h4>
+                                        <ul class="tech-badges mb-3">
+                                            <li>Flutter</li><li>Dart</li>
+                                        </ul>
+                                        <p class="card-text mb-0">
+                                            Le 2048 sur mobile : déplacement au doigt ou au clavier, annulation du dernier coup, meilleur score sauvegardé et paramètres personnalisables.
+                                        </p>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-0 pt-0 pb-3">
+                                        <a class="btn btn-sm btn-primary" href="https://github.com/MiscuitAtlas/Jeu_2048_Flutter" target="_blank" rel="noopener noreferrer">
+                                            <i class="fa-brands fa-github" aria-hidden="true"></i> Code source
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Premiers TP -->
+                        <h3 class="section-subtitle mb-3">Premiers travaux pratiques en JavaScript</h3>
+                        <div class="row row-cols-1 row-cols-md-2 g-4">
+                            <article class="col">
+                                <div class="card h-100 project-card shadow-sm">
+                                    <button type="button" class="project-cover-btn" data-gallery-title="Gestionnaire de tâches"
+                                        data-gallery='[{"src":"assets/img/projets/taches-toutes.webp","alt":"Toutes les tâches"},{"src":"assets/img/projets/taches-terminees.webp","alt":"Tâches terminées"},{"src":"assets/img/projets/taches-en-cours.webp","alt":"Tâches non terminées"}]'>
+                                        <img src="assets/img/projets/taches-toutes.webp" alt="Liste de tâches" class="project-cover project-cover--contain" width="965" height="326" loading="lazy">
+                                        <span class="project-cover-hint"><i class="fa-solid fa-images" aria-hidden="true"></i> 3 captures</span>
+                                    </button>
+                                    <div class="card-body">
+                                        <h4 class="h5 card-title">Gestionnaire de tâches</h4>
+                                        <p class="card-text mb-0">Ajouter, cocher, filtrer et supprimer des tâches, en JavaScript sans bibliothèque.</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-0 pt-0 pb-3">
+                                        <a class="btn btn-sm btn-primary" href="https://github.com/MiscuitAtlas/Taches_JavaScript" target="_blank" rel="noopener noreferrer">
+                                            <i class="fa-brands fa-github" aria-hidden="true"></i> Code source
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="col">
+                                <div class="card h-100 project-card shadow-sm">
+                                    <button type="button" class="project-cover-btn" data-gallery-title="Interface de messagerie"
+                                        data-gallery='[{"src":"assets/img/projets/messagerie.webp","alt":"Messages affichés en bulles alternées"}]'>
+                                        <img src="assets/img/projets/messagerie.webp" alt="Interface de messagerie" class="project-cover project-cover--contain" width="966" height="330" loading="lazy">
+                                        <span class="project-cover-hint"><i class="fa-solid fa-image" aria-hidden="true"></i> 1 capture</span>
+                                    </button>
+                                    <div class="card-body">
+                                        <h4 class="h5 card-title">Interface de messagerie</h4>
+                                        <p class="card-text mb-0">Exercice de manipulation du DOM : les messages saisis s’affichent en bulles, alternativement à gauche et à droite.</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-0 pt-0 pb-3">
+                                        <a class="btn btn-sm btn-primary" href="https://github.com/MiscuitAtlas/Messagerie_JavaScript" target="_blank" rel="noopener noreferrer">
+                                            <i class="fa-brands fa-github" aria-hidden="true"></i> Code source
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
                 </div>
             </div>
         </div>
+    </main>
 
-        <script>
-            fetch('navbar.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('navbar').innerHTML = data;
-                })
-                .catch(error => console.error('Erreur lors du chargement de la navbar:', error));
-
-            document.addEventListener("DOMContentLoaded", function () {
-                var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-                var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-                    return new bootstrap.Tooltip(tooltipTriggerEl);
-                });
-            });
-        </script>
-
-        <footer class="bg-dark text-white text-center py-2 mt-5 position-relative" style="height: 80px; overflow: hidden;">
-            <p class="mb-2">&copy; 2025 Maxence Français - Tous droits réservés</p>
-            <div class="d-flex justify-content-center align-items-center">
-                <a href="https://www.linkedin.com/in/maxence-français-a039a2307" target="_blank" class="text-white me-2" style="text-decoration: none;">
-                    <i class="fab fa-linkedin" style="font-size: 18px; margin-right: 5px;"></i>
-                    LinkedIn
-                </a>
-                <span class="mx-2">|</span>
-                <a href="https://github.com/MiscuitAtlas" target="_blank" class="text-white ms-2" style="text-decoration: none;">
-                    <i class="fab fa-github" style="font-size: 18px; margin-right: 5px;"></i>
-                    GitHub
-                </a>
+    <!-- ============ Galerie de captures ============ -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryTitle" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title h5" id="galleryTitle">Captures d’écran</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="galleryCarousel" class="carousel slide">
+                        <div class="carousel-inner"></div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Capture précédente</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Capture suivante</span>
+                        </button>
+                    </div>
+                    <p id="galleryCaption" class="text-center text-body-secondary mt-3 mb-0" aria-live="polite"></p>
+                </div>
             </div>
-        </footer>
-    </body>
+        </div>
+    </div>
+
+    <!-- ============ Lettre de motivation ============ -->
+    <div class="modal fade" id="motivationModal" tabindex="-1" aria-labelledby="motivationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title h5" id="motivationModalLabel">Lettre de motivation</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                </div>
+                <div class="modal-body lettre">
+                    <p>Madame, Monsieur,</p>
+                    <p>
+                        Actuellement étudiant en deuxième année de Master Cybersécurité – Défense des Systèmes d’Information à
+                        l’INSA Hauts-de-France – Université Polytechnique Hauts-de-France, je suis à la recherche d’un stage de
+                        fin d’études d’une durée de 20 semaines minimum, à compter de mars 2027.
+                    </p>
+                    <p>
+                        Au cours de mon parcours académique et de mes expériences professionnelles au sein de la Direction des
+                        Systèmes d’Information et du Numérique (DSIN) du Groupe AHNAC, j’ai développé une solide expertise à la
+                        croisée de la sécurité des systèmes d’information, de la gestion des identités (IAM) et du développement
+                        sécurisé.
+                    </p>
+                    <p>Mes stages m’ont permis d’intervenir sur des projets critiques au sein d’un environnement hospitalier exigeant :</p>
+                    <ul>
+                        <li>
+                            <strong>Gestion des accès et IAM :</strong> conception et refonte d’une application web centralisée
+                            sous ASP.NET Core (C# / LDAP) pour gérer l’annuaire Active Directory, sécuriser la configuration
+                            (User Secrets), mettre en place l’authentification SSO et automatiser les workflows d’habilitation
+                            (VPN, droits applicatifs).
+                        </li>
+                        <li>
+                            <strong>Bases de données et outils métier :</strong> optimisation de requêtes SQL/HQL complexes,
+                            traitement sécurisé de données de santé (HDS / RGPD) et développement d’applications web de suivi
+                            métier (ASP, PHP, JavaScript) lors de phases de migration du SI.
+                        </li>
+                    </ul>
+                    <p>
+                        En parallèle, ma formation en Master m’apporte des compétences pratiques poussées en cyberdéfense, tests
+                        d’intrusion, analyse forensique, cryptographie et administration d’infrastructures sécurisées
+                        (Kali Linux, Metasploit, Wireshark, Volatility, Autopsy), ainsi que l’habitude de relever des challenges
+                        techniques tels que les Crackme.
+                    </p>
+                    <p>
+                        Rigoureux, autonome et passionné par les enjeux de sécurité et de résilience des infrastructures
+                        informatiques, je souhaite intégrer une équipe pour contribuer activement à la protection et à
+                        l’optimisation des systèmes d’information.
+                    </p>
+                    <p>
+                        Je reste à votre entière disposition pour échanger de vive voix sur mon profil et sur la manière dont je
+                        pourrais m’investir au sein de votre entreprise. Je vous prie d’agréer, Madame, Monsieur, l’expression
+                        de mes salutations distinguées.
+                    </p>
+                    <p class="mb-0">
+                        <strong>Maxence Français</strong><br>
+                        Étudiant en Master 2 Cybersécurité
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <a href="contact.html" class="btn btn-primary">Me contacter</a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div data-partial="partials/footer.html"></div>
+</body>
 </html>
