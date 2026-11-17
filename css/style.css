@@ -1,0 +1,294 @@
+/* ==========================================================================
+   Portfolio – Maxence Français
+   Styles personnalisés, en complément de Bootstrap 5.3
+   ========================================================================== */
+
+:root {
+    --brand: #3339ff;
+    --brand-dark: #1f24c7;
+    --bs-primary: #3339ff;
+    --bs-primary-rgb: 51, 57, 255;
+    --bs-link-color: #1f24c7;
+    --bs-link-color-rgb: 31, 36, 199;
+    --bs-link-hover-color: #151a99;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f6f7fb;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+/* Boutons à la couleur du site */
+.btn-primary {
+    --bs-btn-bg: var(--brand);
+    --bs-btn-border-color: var(--brand);
+    --bs-btn-hover-bg: var(--brand-dark);
+    --bs-btn-hover-border-color: var(--brand-dark);
+    --bs-btn-active-bg: var(--brand-dark);
+    --bs-btn-active-border-color: var(--brand-dark);
+}
+
+.btn-outline-primary {
+    --bs-btn-color: var(--brand);
+    --bs-btn-border-color: var(--brand);
+    --bs-btn-hover-bg: var(--brand);
+    --bs-btn-hover-border-color: var(--brand);
+    --bs-btn-active-bg: var(--brand-dark);
+}
+
+.text-bg-primary {
+    background-color: var(--brand) !important;
+}
+
+/* Lien d'évitement (accessibilité clavier) */
+.skip-link {
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+    z-index: 2000;
+    padding: .5rem 1rem;
+    background: #fff;
+    border-radius: .375rem;
+}
+
+/* --------------------------------------------------------------------------
+   Navigation et pied de page (chargés depuis partials/)
+   -------------------------------------------------------------------------- */
+.site-navbar {
+    background-color: var(--brand);
+    min-height: 56px;
+}
+
+.site-navbar .nav-link {
+    color: rgba(255, 255, 255, .85);
+}
+
+.site-navbar .nav-link:hover,
+.site-navbar .nav-link:focus,
+.site-navbar .nav-link.active {
+    color: #fff;
+}
+
+.site-navbar .nav-link.active {
+    text-decoration: underline;
+    text-underline-offset: .35em;
+}
+
+.site-footer {
+    background-color: #1c1f2a;
+    color: #fff;
+    padding: 1.25rem 0;
+}
+
+.site-footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.site-footer a:hover,
+.site-footer a:focus {
+    text-decoration: underline;
+}
+
+/* --------------------------------------------------------------------------
+   Carte de profil
+   -------------------------------------------------------------------------- */
+.profile-photo {
+    width: 160px;
+    height: auto;
+    border-radius: .75rem;
+    border: 5px solid #e3e5ee;
+}
+
+.profile-facts {
+    gap: .5rem 1.25rem;
+}
+
+/* --------------------------------------------------------------------------
+   Onglets et listes du parcours
+   -------------------------------------------------------------------------- */
+.nav-tabs .nav-link {
+    color: #444;
+}
+
+.nav-tabs .nav-link.active {
+    color: var(--brand);
+    font-weight: 600;
+}
+
+.timeline-item h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: .15rem;
+}
+
+.timeline-item .lieu {
+    font-weight: 600;
+    color: #555;
+}
+
+.timeline-item ul {
+    padding-left: 1.1rem;
+    margin-bottom: 0;
+}
+
+.timeline-item li + li {
+    margin-top: .35rem;
+}
+
+/* Cartes de compétences : texte foncé sur les en-têtes clairs (contraste) */
+.skill-card .card-header {
+    font-weight: 700;
+    text-align: center;
+}
+
+.skill-card .list-group-item {
+    padding: .35rem .5rem;
+}
+
+.skill-card .list-group-item i {
+    width: 1.4em;
+    text-align: center;
+}
+
+/* --------------------------------------------------------------------------
+   Projets
+   -------------------------------------------------------------------------- */
+.project-card {
+    overflow: hidden;
+    transition: box-shadow .2s ease, transform .2s ease;
+}
+
+.project-card:hover {
+    box-shadow: 0 .5rem 1.25rem rgba(0, 0, 0, .12);
+    transform: translateY(-2px);
+}
+
+.project-cover-btn {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: #e9ebf3;
+    cursor: zoom-in;
+}
+
+.project-cover {
+    width: 100%;
+    height: auto; /* annule l'attribut height de l'image pour que le format 16/9 s'applique */
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* Captures au format téléphone (2048) */
+.project-cover--contain {
+    object-fit: contain;
+    object-position: center;
+    background: #faf8ef;
+}
+
+.project-cover-hint {
+    position: absolute;
+    right: .5rem;
+    bottom: .5rem;
+    padding: .2rem .55rem;
+    border-radius: 1rem;
+    background: rgba(0, 0, 0, .7);
+    color: #fff;
+    font-size: .8rem;
+}
+
+.project-cover-btn:focus-visible {
+    outline: 3px solid var(--brand);
+    outline-offset: -3px;
+}
+
+.tech-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .35rem;
+    padding: 0;
+    list-style: none;
+}
+
+.tech-badges li {
+    padding: .2rem .55rem;
+    border-radius: 1rem;
+    background: #eef0ff;
+    color: #1f24c7;
+    font-size: .78rem;
+    font-weight: 600;
+}
+
+.section-subtitle {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+}
+
+/* Galerie de captures (fenêtre modale) */
+#galleryCarousel .carousel-item img {
+    max-height: 75vh;
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#galleryCarousel .carousel-control-prev,
+#galleryCarousel .carousel-control-next {
+    width: 3rem;
+}
+
+#galleryCarousel .carousel-control-prev-icon,
+#galleryCarousel .carousel-control-next-icon {
+    padding: 1.1rem;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .6);
+    background-size: 55%;
+}
+
+/* --------------------------------------------------------------------------
+   Lettre de motivation
+   -------------------------------------------------------------------------- */
+.lettre p,
+.lettre li {
+    text-align: justify;
+}
+
+/* --------------------------------------------------------------------------
+   Responsive
+   -------------------------------------------------------------------------- */
+@media (max-width: 575.98px) {
+    .nav-tabs {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .nav-tabs .nav-link {
+        white-space: nowrap;
+        padding: .5rem .55rem;
+        font-size: .9rem;
+    }
+
+    .profile-actions .btn {
+        width: 100%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .project-card,
+    .project-card:hover {
+        transition: none;
+        transform: none;
+    }
+}
