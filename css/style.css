@@ -195,6 +195,17 @@ main {
     background: #faf8ef;
 }
 
+/* Projet sans capture d'écran : vignette avec icône */
+.project-cover-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 16 / 9;
+    background: linear-gradient(135deg, #1c1f2a, var(--brand));
+    color: #fff;
+    font-size: 3.5rem;
+}
+
 .project-cover-hint {
     position: absolute;
     right: .5rem;

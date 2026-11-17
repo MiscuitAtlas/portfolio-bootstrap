@@ -264,7 +264,7 @@
 
                         <!-- Web et mobile -->
                         <h3 class="section-subtitle mb-3">Développement web et mobile</h3>
-                        <div class="row row-cols-1 row-cols-md-2 g-4 mb-5">
+                        <div class="row row-cols-1 row-cols-md-2 g-4">
                             <article class="col">
                                 <div class="card h-100 project-card shadow-sm">
                                     <button type="button" class="project-cover-btn" data-gallery-title="Escape Game en ligne"
@@ -291,19 +291,21 @@
 
                             <article class="col">
                                 <div class="card h-100 project-card shadow-sm">
-                                    <button type="button" class="project-cover-btn" data-gallery-title="Vacances Connectées"
-                                        data-gallery='[{"src":"assets/img/projets/vacances-accueil.webp","alt":"Page d’accueil et logements populaires"},{"src":"assets/img/projets/vacances-rechercher.webp","alt":"Recherche de logement"},{"src":"assets/img/projets/vacances-proposer.webp","alt":"Proposer un logement"}]'>
-                                        <img src="assets/img/projets/vacances-accueil.webp" alt="Page d’accueil de Vacances Connectées" class="project-cover" width="1600" height="722" loading="lazy">
-                                        <span class="project-cover-hint"><i class="fa-solid fa-images" aria-hidden="true"></i> 3 captures</span>
-                                    </button>
+                                    <div class="project-cover-placeholder" aria-hidden="true">
+                                        <i class="fa-solid fa-moon"></i>
+                                    </div>
                                     <div class="card-body">
-                                        <h4 class="h5 card-title">Vacances Connectées</h4>
+                                        <h4 class="h5 card-title">Suivi du sommeil</h4>
+                                        <ul class="tech-badges mb-3">
+                                            <li>CakePHP 5</li><li>PHP</li><li>MySQL</li>
+                                        </ul>
                                         <p class="card-text mb-0">
-                                            Plateforme collaborative pour rechercher, proposer et partager des logements et des activités de vacances.
+                                            Application web avec comptes utilisateurs : saisie quotidienne des heures de coucher et de lever, de la forme au réveil, des siestes et du sport,
+                                            calcul des cycles de sommeil et résumé hebdomadaire.
                                         </p>
                                     </div>
                                     <div class="card-footer bg-transparent border-0 pt-0 pb-3">
-                                        <a class="btn btn-sm btn-primary" href="https://github.com/MiscuitAtlas/VacancesConnectees" target="_blank" rel="noopener noreferrer">
+                                        <a class="btn btn-sm btn-primary" href="https://github.com/MiscuitAtlas/Suivi_Sommeil_CakePHP" target="_blank" rel="noopener noreferrer">
                                             <i class="fa-brands fa-github" aria-hidden="true"></i> Code source
                                         </a>
                                     </div>
@@ -360,43 +362,25 @@
                                     </div>
                                 </div>
                             </article>
-                        </div>
-
-                        <!-- Premiers TP -->
-                        <h3 class="section-subtitle mb-3">Premiers travaux pratiques en JavaScript</h3>
-                        <div class="row row-cols-1 row-cols-md-2 g-4">
-                            <article class="col">
-                                <div class="card h-100 project-card shadow-sm">
-                                    <button type="button" class="project-cover-btn" data-gallery-title="Gestionnaire de tâches"
-                                        data-gallery='[{"src":"assets/img/projets/taches-toutes.webp","alt":"Toutes les tâches"},{"src":"assets/img/projets/taches-terminees.webp","alt":"Tâches terminées"},{"src":"assets/img/projets/taches-en-cours.webp","alt":"Tâches non terminées"}]'>
-                                        <img src="assets/img/projets/taches-toutes.webp" alt="Liste de tâches" class="project-cover project-cover--contain" width="965" height="326" loading="lazy">
-                                        <span class="project-cover-hint"><i class="fa-solid fa-images" aria-hidden="true"></i> 3 captures</span>
-                                    </button>
-                                    <div class="card-body">
-                                        <h4 class="h5 card-title">Gestionnaire de tâches</h4>
-                                        <p class="card-text mb-0">Ajouter, cocher, filtrer et supprimer des tâches, en JavaScript sans bibliothèque.</p>
-                                    </div>
-                                    <div class="card-footer bg-transparent border-0 pt-0 pb-3">
-                                        <a class="btn btn-sm btn-primary" href="https://github.com/MiscuitAtlas/Taches_JavaScript" target="_blank" rel="noopener noreferrer">
-                                            <i class="fa-brands fa-github" aria-hidden="true"></i> Code source
-                                        </a>
-                                    </div>
-                                </div>
-                            </article>
 
                             <article class="col">
                                 <div class="card h-100 project-card shadow-sm">
-                                    <button type="button" class="project-cover-btn" data-gallery-title="Interface de messagerie"
-                                        data-gallery='[{"src":"assets/img/projets/messagerie.webp","alt":"Messages affichés en bulles alternées"}]'>
-                                        <img src="assets/img/projets/messagerie.webp" alt="Interface de messagerie" class="project-cover project-cover--contain" width="966" height="330" loading="lazy">
+                                    <button type="button" class="project-cover-btn" data-gallery-title="Ce portfolio"
+                                        data-gallery='[{"src":"assets/img/apercu.webp","alt":"Page d’accueil du portfolio"}]'>
+                                        <img src="assets/img/apercu.webp" alt="Page d’accueil du portfolio" class="project-cover" width="1366" height="900" loading="lazy">
                                         <span class="project-cover-hint"><i class="fa-solid fa-image" aria-hidden="true"></i> 1 capture</span>
                                     </button>
                                     <div class="card-body">
-                                        <h4 class="h5 card-title">Interface de messagerie</h4>
-                                        <p class="card-text mb-0">Exercice de manipulation du DOM : les messages saisis s’affichent en bulles, alternativement à gauche et à droite.</p>
+                                        <h4 class="h5 card-title">Ce portfolio</h4>
+                                        <ul class="tech-badges mb-3">
+                                            <li>HTML</li><li>CSS</li><li>Bootstrap 5</li><li>JavaScript</li>
+                                        </ul>
+                                        <p class="card-text mb-0">
+                                            Site codé à la main et hébergé sur GitHub Pages, avec une politique de sécurité du contenu (CSP) stricte et des bibliothèques vérifiées par SRI.
+                                        </p>
                                     </div>
                                     <div class="card-footer bg-transparent border-0 pt-0 pb-3">
-                                        <a class="btn btn-sm btn-primary" href="https://github.com/MiscuitAtlas/Messagerie_JavaScript" target="_blank" rel="noopener noreferrer">
+                                        <a class="btn btn-sm btn-primary" href="https://github.com/MiscuitAtlas/Portfolio_Bootstrap" target="_blank" rel="noopener noreferrer">
                                             <i class="fa-brands fa-github" aria-hidden="true"></i> Code source
                                         </a>
                                     </div>
