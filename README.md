@@ -1,55 +1,47 @@
-# 🌐 Portfolio Maxence - Projet HTML, CSS, Bootstrap et JavaScript
+# Portfolio Bootstrap – Maxence Français
 
-## 📖 Description
-Ce projet est un portfolio personnel développé avec Bootstrap, mettant en avant mes compétences, mes projets, et mes expériences professionnelles. Moderne et responsive, il offre une navigation fluide pour consulter facilement mes réalisations et me contacter.
+La première version de mon portfolio, codée à la main en HTML, CSS, Bootstrap 5 et JavaScript, sans framework ni générateur de site. Elle reste en ligne sur [miscuitatlas.github.io/portfolio-bootstrap](https://miscuitatlas.github.io/portfolio-bootstrap/).
 
-👉 **Accéder au portfolio en ligne** : [Portfolio Maxence](https://miscuitatlas.github.io/Portfolio_Bootstrap/)
+> Ce site n'est plus mis à jour. Mon portfolio actuel est sur [miscuitatlas.github.io](https://miscuitatlas.github.io) (dépôt [MiscuitAtlas.github.io](https://github.com/MiscuitAtlas/MiscuitAtlas.github.io)).
 
-## 📌 Fonctionnalités
-- 🧑‍💼 Présentation personnelle avec photo et résumé de parcours.
-- 📂 Section Projets : description des projets réalisés avec des captures d’écran et liens vers les dépôts GitHub ou démonstrations en ligne.
-- 🕑 Timeline dynamique avec les dates affichées dans un petit carré pour visualiser les étapes importantes.
-- 📱 Design responsive : compatible avec tous les appareils (mobile, tablette, desktop).
-- ✉️ Formulaire de contact fonctionnel.
+![Page d'accueil du portfolio](assets/img/apercu.webp)
 
-## 🛠️ Technologies utilisées
-* HTML
-  
-* CSS
+## Contenu
 
-* Bootstrap
+- **Accueil** : présentation, recherche de stage, CV en PDF et lettre de motivation.
+- **Parcours, compétences et projets** : une carte par projet, avec des captures d'écran, le lien vers le code et vers la démo.
+- **À propos** : les choix techniques et la sécurité du site.
+- **Contact** : formulaire relié à [Formspree](https://formspree.io/), avec un champ piège contre le spam.
 
-* JavaScript
+**Stack** : HTML5, CSS3, Bootstrap 5.3, Font Awesome 6, JavaScript sans bibliothèque, Formspree, GitHub Pages.
 
-## 📦 Installation et utilisation
-1. Cloner le projet :
-  ```
-  git clone https://github.com/MiscuitAtlas/Portfolio_Bootstrap.git
-  cd Portfolio_Bootstrap
-  ```
-2. Allez sur Visual Studio Code :
-  ```
-  Ouvrez le dossier Portfolio_Bootstrap dans VS Code.
-  ```
-3. Installer l'extension Five Server :
-  ```
-  Ouvrir le Marketplace des extensions (Ctrl+Shift+X).
-  Rechercher Five Server et l’installer.
-  ```
-4. Démarrer le serveur :
-  ```
-  Cliquez avec le bouton droit sur index.html.
-  Sélectionnez "Open with Five Server".
-  ```
+## Sécurité
 
-## 📸 Aperçu
-<img width="1897" height="1025" alt="image" src="https://github.com/user-attachments/assets/ceca47a0-4774-41e1-8728-9fba57aae1c2" />
+- Content Security Policy stricte : aucun script ni style écrit dans les pages, seuls le site et jsDelivr peuvent fournir du code.
+- Subresource Integrity (SRI) sur Bootstrap et Font Awesome : le navigateur vérifie leur empreinte avant de les exécuter.
+- Aucun numéro de téléphone ni adresse email publiés : le contact passe par le formulaire.
 
-## 📧 Contact
-Pour toute question ou suggestion, contactez-moi :
+## Lancer le site en local
 
-* Email : maxencefran@gmail.com
+La barre de navigation et le pied de page sont chargés avec `fetch()`, que le navigateur bloque quand on ouvre `index.html` par double-clic. Il faut donc passer par un petit serveur :
 
-* GitHub : [MiscuitAtlas](https://github.com/MiscuitAtlas)
+```bash
+git clone https://github.com/MiscuitAtlas/portfolio-bootstrap.git
+cd portfolio-bootstrap
+python -m http.server 8000     # http://localhost:8000
+```
 
-* Linkedin : [MaxenceFrançais](https://www.linkedin.com/in/maxence-fran%C3%A7ais-a039a2307/)
+## Structure
+
+```
+index.html      accueil : profil, parcours, compétences, projets, lettre de motivation
+a-propos.html   choix techniques et sécurité du site
+contact.html    formulaire de contact
+partials/       barre de navigation et pied de page communs
+css/, js/       styles, chargement des parties communes, galerie, onglets
+assets/         images (WebP) et CV
+```
+
+## Auteur
+
+**Maxence Français** : [portfolio actuel](https://miscuitatlas.github.io) · [LinkedIn](https://www.linkedin.com/in/maxence-fran%C3%A7ais-a039a2307/)
