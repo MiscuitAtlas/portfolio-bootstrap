@@ -80,6 +80,19 @@ main {
     text-underline-offset: .35em;
 }
 
+.legacy-banner {
+    background-color: #1c1f2a;
+    color: rgba(255, 255, 255, .85);
+    font-size: .875rem;
+    padding: .5rem 0;
+}
+
+.legacy-banner a {
+    color: #fff;
+    font-weight: 600;
+    text-underline-offset: .2em;
+}
+
 .site-footer {
     background-color: #1c1f2a;
     color: #fff;

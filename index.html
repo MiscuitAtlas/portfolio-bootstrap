@@ -229,31 +229,27 @@
                     <!-- ----- Projets ----- -->
                     <section class="tab-pane fade" id="projets" role="tabpanel" aria-labelledby="projets-tab" tabindex="0">
                         <h2 class="visually-hidden">Projets</h2>
-                        <p class="text-body-secondary small">Cliquez sur une image pour voir toutes les captures d’écran du projet.</p>
+                        <p class="text-body-secondary small">Du plus important au moins important. Cliquez sur une image pour voir toutes les captures d’écran du projet.</p>
 
                         <!-- Cybersécurité -->
                         <h3 class="section-subtitle mt-2 mb-3">Cybersécurité</h3>
                         <div class="row row-cols-1 g-4 mb-5">
                             <article class="col">
                                 <div class="card h-100 project-card shadow-sm">
-                                    <button type="button" class="project-cover-btn" data-gallery-title="Assistant RAG cybersécurité (MITRE ATT&amp;CK + NVD)"
-                                        data-gallery='[{"src":"assets/img/projets/rag-resultats.webp","alt":"Résultats : score de 0,85 pour le RAG contre 0,40 pour le LLM seul"},{"src":"assets/img/projets/rag-demo.webp","alt":"Interface Streamlit : question, réponse et sources"},{"src":"assets/img/projets/rag-cas-usage.webp","alt":"Recherche exacte d’une CVE dans le terminal"}]'>
-                                        <img src="assets/img/projets/rag-resultats.webp" alt="Diapositive des résultats du projet RAG" class="project-cover" width="1600" height="900" loading="lazy">
-                                        <span class="project-cover-hint"><i class="fa-solid fa-images" aria-hidden="true"></i> 3 captures</span>
+                                    <button type="button" class="project-cover-btn" data-gallery-title="Assistant RAG cybersécurité – MITRE ATT&amp;CK et NVD"
+                                        data-gallery='[{"src":"assets/img/projets/rag-interface.webp","alt":"Interface Streamlit de l’assistant, avec une question, la réponse générée et les sources utilisées"},{"src":"assets/img/projets/rag-architecture.webp","alt":"Schéma du pipeline, des données sources jusqu’à la réponse de Mistral"},{"src":"assets/img/projets/rag-recherche-exacte-cve.webp","alt":"Terminal montrant la détection de l’identifiant CVE-2025-14037 et la réponse obtenue"},{"src":"assets/img/projets/rag-resultats.webp","alt":"Diapositive des résultats de la première version, présentée en soutenance"}]'>
+                                        <img src="assets/img/projets/rag-interface.webp" alt="Interface Streamlit de l’assistant, avec une question, la réponse générée et les sources utilisées" class="project-cover" width="1200" height="675" loading="lazy">
+                                        <span class="project-cover-hint"><i class="fa-solid fa-images" aria-hidden="true"></i> 4 captures</span>
                                     </button>
                                     <div class="card-body">
-                                        <h4 class="h5 card-title">Assistant RAG cybersécurité – MITRE ATT&amp;CK + NVD</h4>
+                                        <h4 class="h5 card-title">Assistant RAG cybersécurité – MITRE ATT&amp;CK et NVD</h4>
                                         <ul class="tech-badges mb-3">
                                             <li>Python</li><li>FAISS</li><li>BM25</li><li>Mistral (Ollama)</li><li>Streamlit</li>
                                         </ul>
-                                        <p class="card-text">
-                                            Assistant de questions-réponses sur les techniques MITRE ATT&amp;CK et les CVE du NVD, avec un LLM exécuté en local.
-                                            Il combine recherche exacte des identifiants, recherche vectorielle et recherche hybride BM25.
-                                            Sur 20 questions d’évaluation, il obtient un score de couverture de <strong>0,85</strong>, contre 0,40 pour le LLM seul.
-                                        </p>
-                                        <p class="card-text small text-body-secondary mb-0">Projet de Master 1, réalisé en binôme.</p>
+                                        <p class="card-text">Assistant de questions-réponses sur les techniques MITRE ATT&amp;CK, les CVE du NVD et les faiblesses CWE, avec un LLM exécuté en local. Il combine la recherche exacte des identifiants, BM25 et la recherche vectorielle. Sur 20 questions d’évaluation, il retrouve 24 des 25 informations absentes de la question, contre aucune pour Mistral seul.</p>
+                                        <p class="card-text small text-body-secondary mb-0">Projet de Master 1, réalisé en binôme avec <a href="https://github.com/MjBilaal" target="_blank" rel="noopener noreferrer">Bilal Medj</a>.</p>
                                     </div>
-                                    <div class="card-footer bg-transparent border-0 pt-0 pb-3">
+                                    <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap gap-2">
                                         <a class="btn btn-sm btn-primary" href="https://github.com/MiscuitAtlas/rag-cyber-mitre-nvd" target="_blank" rel="noopener noreferrer">
                                             <i class="fa-brands fa-github" aria-hidden="true"></i> Code et compte rendu
                                         </a>
@@ -267,19 +263,96 @@
                         <div class="row row-cols-1 row-cols-md-2 g-4">
                             <article class="col">
                                 <div class="card h-100 project-card shadow-sm">
-                                    <button type="button" class="project-cover-btn" data-gallery-title="Escape Game en ligne"
-                                        data-gallery='[{"src":"assets/img/projets/escape-game-jeux.webp","alt":"Choix de l’escape game et historique des parties"},{"src":"assets/img/projets/escape-game-accueil.webp","alt":"Page d’accueil"},{"src":"assets/img/projets/escape-game-connexion.webp","alt":"Page de connexion"},{"src":"assets/img/projets/escape-game-inscription.webp","alt":"Page d’inscription"}]'>
-                                        <img src="assets/img/projets/escape-game-jeux.webp" alt="Écran de choix des escape games" class="project-cover" width="1600" height="792" loading="lazy">
+                                    <button type="button" class="project-cover-btn" data-gallery-title="VacancesConnectées"
+                                        data-gallery='[{"src":"assets/img/projets/vacances-accueil.webp","alt":"Page d’accueil avec les illustrations de quatre logements et le formulaire de recherche"},{"src":"assets/img/projets/vacances-fiche.webp","alt":"Fiche d’un chalet à Chamonix avec l’encadré de réservation et le prix des sept nuits"},{"src":"assets/img/projets/vacances-calendrier.webp","alt":"Calendrier des disponibilités sur deux mois, avec les nuits réservées barrées, et les avis des voyageurs"},{"src":"assets/img/projets/vacances-recherche.webp","alt":"Résultats de recherche avec huit logements disponibles et les filtres à gauche"},{"src":"assets/img/projets/vacances-proprietaire.webp","alt":"Espace propriétaire avec les réservations à venir et les annonces à modifier ou supprimer"}]'>
+                                        <img src="assets/img/projets/vacances-accueil.webp" alt="Page d’accueil avec les illustrations de quatre logements et le formulaire de recherche" class="project-cover" width="1200" height="844" loading="lazy">
+                                        <span class="project-cover-hint"><i class="fa-solid fa-images" aria-hidden="true"></i> 5 captures</span>
+                                    </button>
+                                    <div class="card-body">
+                                        <h4 class="h5 card-title">VacancesConnectées</h4>
+                                        <ul class="tech-badges mb-3">
+                                            <li>PHP 8</li><li>MySQL</li><li>PHPUnit</li><li>Docker</li>
+                                        </ul>
+                                        <p class="card-text">Location de logements de vacances entre particuliers, en PHP sans framework : recherche par dates, réservation sans chevauchement, avis après le séjour et espace propriétaire. Les failles de la première version sont corrigées (injections SQL, XSS, prise de contrôle de compte), avec 63 tests PHPUnit.</p>
+                                        <p class="card-text small text-body-secondary mb-0">Projet de 2e année de DEUST IOSI.</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap gap-2">
+                                        <a class="btn btn-sm btn-primary" href="https://github.com/MiscuitAtlas/vacances-connectees" target="_blank" rel="noopener noreferrer">
+                                            <i class="fa-brands fa-github" aria-hidden="true"></i> Code source
+                                        </a>
+                                        <a class="btn btn-sm btn-outline-primary" href="https://vacances-connectees.onrender.com" target="_blank" rel="noopener noreferrer">
+                                            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Démo en ligne
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="col">
+                                <div class="card h-100 project-card shadow-sm">
+                                    <button type="button" class="project-cover-btn" data-gallery-title="Roque, échecs en ligne"
+                                        data-gallery='[{"src":"assets/img/projets/echecs-partie.webp","alt":"Partie en cours vue des Blancs, avec les coups possibles du pion e4, la feuille de notation et la discussion"},{"src":"assets/img/projets/echecs-accueil.webp","alt":"Page d’accueil avec les boutons Jouer sans compte et Créer un compte"},{"src":"assets/img/projets/echecs-noirs.webp","alt":"La même partie vue des Noirs, avec l’échiquier retourné"},{"src":"assets/img/projets/echecs-parties.webp","alt":"Page Mes parties avec la création d’une partie, la saisie d’un code et la liste des parties"}]'>
+                                        <img src="assets/img/projets/echecs-partie.webp" alt="Partie en cours vue des Blancs, avec les coups possibles du pion e4, la feuille de notation et la discussion" class="project-cover" width="1200" height="844" loading="lazy">
                                         <span class="project-cover-hint"><i class="fa-solid fa-images" aria-hidden="true"></i> 4 captures</span>
+                                    </button>
+                                    <div class="card-body">
+                                        <h4 class="h5 card-title">Roque, échecs en ligne</h4>
+                                        <ul class="tech-badges mb-3">
+                                            <li>Vue 3</li><li>Django</li><li>Channels</li><li>WebSocket</li>
+                                        </ul>
+                                        <p class="card-text">Jeu d’échecs en ligne entre amis : on crée une partie, on envoie le code à son adversaire, et chaque coup s’affiche aussitôt chez l’autre. Les règles complètes sont vérifiées par un moteur écrit en Python, avec 67 tests pytest.</p>
+                                        <p class="card-text small text-body-secondary mb-0">Projet de licence professionnelle, réalisé en binôme avec <a href="https://github.com/PendrePilm" target="_blank" rel="noopener noreferrer">Théo Defossez</a>.</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap gap-2">
+                                        <a class="btn btn-sm btn-primary" href="https://github.com/MiscuitAtlas/echecs-vue-django" target="_blank" rel="noopener noreferrer">
+                                            <i class="fa-brands fa-github" aria-hidden="true"></i> Code source
+                                        </a>
+                                        <a class="btn btn-sm btn-outline-primary" href="https://echecs-vue-django.onrender.com" target="_blank" rel="noopener noreferrer">
+                                            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Démo en ligne
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="col">
+                                <div class="card h-100 project-card shadow-sm">
+                                    <button type="button" class="project-cover-btn" data-gallery-title="Suivi du sommeil"
+                                        data-gallery='[{"src":"assets/img/projets/sommeil-tableau-de-bord.webp","alt":"Tableau de bord avec la nuit du jour, les objectifs de la semaine et les dernières nuits"},{"src":"assets/img/projets/sommeil-semaine.webp","alt":"Bilan d’une semaine avec les objectifs atteints, les moyennes et le graphique des cycles par nuit"},{"src":"assets/img/projets/sommeil-ajout.webp","alt":"Formulaire d’ajout d’une nuit qui propose les heures de réveil en fin de cycle"},{"src":"assets/img/projets/sommeil-menus.webp","alt":"Gestion du menu de navigation avec les boutons pour changer l’ordre des liens"}]'>
+                                        <img src="assets/img/projets/sommeil-tableau-de-bord.webp" alt="Tableau de bord avec la nuit du jour, les objectifs de la semaine et les dernières nuits" class="project-cover" width="1200" height="844" loading="lazy">
+                                        <span class="project-cover-hint"><i class="fa-solid fa-images" aria-hidden="true"></i> 4 captures</span>
+                                    </button>
+                                    <div class="card-body">
+                                        <h4 class="h5 card-title">Suivi du sommeil</h4>
+                                        <ul class="tech-badges mb-3">
+                                            <li>CakePHP 5</li><li>PHP 8</li><li>MySQL</li>
+                                        </ul>
+                                        <p class="card-text">Suivi du sommeil par cycles de 90 minutes, avec bilan de la semaine, contrôle d’accès par ressource et menu administrable. 82 tests PHPUnit.</p>
+                                        <p class="card-text small text-body-secondary mb-0">TP CakePHP de licence professionnelle.</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap gap-2">
+                                        <a class="btn btn-sm btn-primary" href="https://github.com/MiscuitAtlas/suivi-sommeil-cakephp" target="_blank" rel="noopener noreferrer">
+                                            <i class="fa-brands fa-github" aria-hidden="true"></i> Code source
+                                        </a>
+                                        <a class="btn btn-sm btn-outline-primary" href="https://suivi-sommeil.onrender.com" target="_blank" rel="noopener noreferrer">
+                                            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Démo en ligne
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="col">
+                                <div class="card h-100 project-card shadow-sm">
+                                    <button type="button" class="project-cover-btn" data-gallery-title="Escape Game en ligne"
+                                        data-gallery='[{"src":"assets/img/projets/escape-game-bibliotheque.webp","alt":"La Bibliothèque Mystérieuse en cours de partie, avec le chronomètre, les indices et le classement de la salle"},{"src":"assets/img/projets/escape-game-laboratoire.webp","alt":"Le laboratoire, avec les ingrédients trouvés et le chaudron à remettre dans l’ordre"},{"src":"assets/img/projets/escape-game-vaisseau.webp","alt":"Le vaisseau, où la carte d’accès utilisée sur le panneau de contrôle demande un code"},{"src":"assets/img/projets/escape-game-victoire.webp","alt":"Fenêtre de victoire indiquant le score enregistré au classement"},{"src":"assets/img/projets/escape-game-compte.webp","alt":"Page Mon compte avec les statistiques et l’historique des parties"}]'>
+                                        <img src="assets/img/projets/escape-game-bibliotheque.webp" alt="La Bibliothèque Mystérieuse en cours de partie, avec le chronomètre, les indices et le classement de la salle" class="project-cover" width="1200" height="844" loading="lazy">
+                                        <span class="project-cover-hint"><i class="fa-solid fa-images" aria-hidden="true"></i> 5 captures</span>
                                     </button>
                                     <div class="card-body">
                                         <h4 class="h5 card-title">Escape Game en ligne</h4>
                                         <ul class="tech-badges mb-3">
-                                            <li>Vue.js</li><li>PHP</li><li>MySQL</li>
+                                            <li>Vue.js 3</li><li>PHP</li><li>MySQL</li>
                                         </ul>
-                                        <p class="card-text mb-0">
-                                            Trois escape games à résoudre en temps limité, avec comptes utilisateurs, classement des meilleurs scores et historique des parties.
-                                        </p>
+                                        <p class="card-text">Trois escape games chronométrés dans le navigateur, avec comptes joueurs, classement par salle et historique des parties. Le score est calculé par le serveur, derrière une API PHP sécurisée.</p>
+                                        <p class="card-text small text-body-secondary mb-0">Projet de formation.</p>
                                     </div>
                                     <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap gap-2">
                                         <a class="btn btn-sm btn-primary" href="https://github.com/MiscuitAtlas/escape-game-vue-php" target="_blank" rel="noopener noreferrer">
@@ -294,22 +367,51 @@
 
                             <article class="col">
                                 <div class="card h-100 project-card shadow-sm">
-                                    <div class="project-cover-placeholder" aria-hidden="true">
-                                        <i class="fa-solid fa-moon"></i>
-                                    </div>
+                                    <button type="button" class="project-cover-btn" data-gallery-title="Jeu du 2048"
+                                        data-gallery='[{"src":"assets/img/projets/2048-partie.webp","alt":"Partie de 2048 en cours sur téléphone, avec le score, le record et le nombre de coups"},{"src":"assets/img/projets/2048-victoire.webp","alt":"Objectif 2048 atteint, avec le choix de continuer ou de recommencer"},{"src":"assets/img/projets/2048-grille-8x8.webp","alt":"Grille 8 × 8 en mode cascade, avec le thème sombre"},{"src":"assets/img/projets/2048-reglages.webp","alt":"Écran des réglages avec l’objectif, la taille de la grille et les modes de fusion"}]'>
+                                        <img src="assets/img/projets/2048-partie.webp" alt="Partie de 2048 en cours sur téléphone, avec le score, le record et le nombre de coups" class="project-cover project-cover--contain" width="360" height="779" loading="lazy">
+                                        <span class="project-cover-hint"><i class="fa-solid fa-images" aria-hidden="true"></i> 4 captures</span>
+                                    </button>
                                     <div class="card-body">
-                                        <h4 class="h5 card-title">Suivi du sommeil</h4>
+                                        <h4 class="h5 card-title">Jeu du 2048</h4>
                                         <ul class="tech-badges mb-3">
-                                            <li>CakePHP 5</li><li>PHP</li><li>MySQL</li>
+                                            <li>Flutter</li><li>Dart</li>
                                         </ul>
-                                        <p class="card-text mb-0">
-                                            Application web avec comptes utilisateurs : saisie quotidienne des heures de coucher et de lever, de la forme au réveil, des siestes et du sport,
-                                            calcul des cycles de sommeil et résumé hebdomadaire.
-                                        </p>
+                                        <p class="card-text">Le 2048 en Flutter, jouable dans le navigateur : trois modes de fusion, grilles jusqu’à 8 × 8, annulation des coups et records par type de partie.</p>
+                                        <p class="card-text small text-body-secondary mb-0">TP Flutter de licence professionnelle.</p>
                                     </div>
-                                    <div class="card-footer bg-transparent border-0 pt-0 pb-3">
-                                        <a class="btn btn-sm btn-primary" href="https://github.com/MiscuitAtlas/Suivi_Sommeil_CakePHP" target="_blank" rel="noopener noreferrer">
+                                    <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap gap-2">
+                                        <a class="btn btn-sm btn-primary" href="https://github.com/MiscuitAtlas/jeu-2048-flutter" target="_blank" rel="noopener noreferrer">
                                             <i class="fa-brands fa-github" aria-hidden="true"></i> Code source
+                                        </a>
+                                        <a class="btn btn-sm btn-outline-primary" href="https://miscuitatlas.github.io/jeu-2048-flutter/" target="_blank" rel="noopener noreferrer">
+                                            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Jouer en ligne
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="col">
+                                <div class="card h-100 project-card shadow-sm">
+                                    <button type="button" class="project-cover-btn" data-gallery-title="Mon portfolio actuel"
+                                        data-gallery='[{"src":"assets/img/projets/portfolio-astro-accueil.webp","alt":"Page d’accueil du portfolio en mode sombre"},{"src":"assets/img/projets/portfolio-astro-mode-clair.webp","alt":"Page d’accueil du portfolio en mode clair"},{"src":"assets/img/projets/portfolio-astro-etude-de-cas.webp","alt":"Page d’étude de cas du projet RAG"}]'>
+                                        <img src="assets/img/projets/portfolio-astro-accueil.webp" alt="Page d’accueil du portfolio en mode sombre" class="project-cover" width="1200" height="750" loading="lazy">
+                                        <span class="project-cover-hint"><i class="fa-solid fa-images" aria-hidden="true"></i> 3 captures</span>
+                                    </button>
+                                    <div class="card-body">
+                                        <h4 class="h5 card-title">Mon portfolio actuel</h4>
+                                        <ul class="tech-badges mb-3">
+                                            <li>Astro</li><li>TypeScript</li><li>GitHub Actions</li>
+                                        </ul>
+                                        <p class="card-text">La nouvelle version de mon portfolio : un site statique sans ressource tierce, avec une politique de sécurité du contenu stricte générée à chaque build et une page détaillée par projet.</p>
+                                        <p class="card-text small text-body-secondary mb-0">Projet personnel.</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap gap-2">
+                                        <a class="btn btn-sm btn-primary" href="https://github.com/MiscuitAtlas/MiscuitAtlas.github.io" target="_blank" rel="noopener noreferrer">
+                                            <i class="fa-brands fa-github" aria-hidden="true"></i> Code source
+                                        </a>
+                                        <a class="btn btn-sm btn-outline-primary" href="https://miscuitatlas.github.io" target="_blank" rel="noopener noreferrer">
+                                            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Voir le site
                                         </a>
                                     </div>
                                 </div>
@@ -318,8 +420,8 @@
                             <article class="col">
                                 <div class="card h-100 project-card shadow-sm">
                                     <button type="button" class="project-cover-btn" data-gallery-title="SuperHéros"
-                                        data-gallery='[{"src":"assets/img/projets/superheros-liste.webp","alt":"Liste des super-héros et de leurs pouvoirs"},{"src":"assets/img/projets/superheros-accueil.webp","alt":"Page d’accueil"},{"src":"assets/img/projets/superheros-detail.webp","alt":"Fiche détaillée d’un super-héros"},{"src":"assets/img/projets/superheros-matcher.webp","alt":"Comparateur de pouvoirs"}]'>
-                                        <img src="assets/img/projets/superheros-liste.webp" alt="Liste des super-héros" class="project-cover" width="1600" height="791" loading="lazy">
+                                        data-gallery='[{"src":"assets/img/projets/superheros-liste.webp","alt":"Liste des personnages avec leurs statistiques de pouvoir et les filtres par éditeur et par camp"},{"src":"assets/img/projets/superheros-recherche.webp","alt":"Recherche de « spider » avec les statistiques de chaque personnage"},{"src":"assets/img/projets/superheros-detail.webp","alt":"Fiche détaillée de Batman avec ses statistiques, sa biographie et son apparence"},{"src":"assets/img/projets/superheros-matcher.webp","alt":"SuperPower Matcher avec des curseurs de niveau minimum et les personnages correspondants"}]'>
+                                        <img src="assets/img/projets/superheros-liste.webp" alt="Liste des personnages avec leurs statistiques de pouvoir et les filtres par éditeur et par camp" class="project-cover" width="1200" height="588" loading="lazy">
                                         <span class="project-cover-hint"><i class="fa-solid fa-images" aria-hidden="true"></i> 4 captures</span>
                                     </button>
                                     <div class="card-body">
@@ -327,9 +429,8 @@
                                         <ul class="tech-badges mb-3">
                                             <li>Vue.js 3</li><li>API REST</li>
                                         </ul>
-                                        <p class="card-text mb-0">
-                                            Rechercher, consulter et comparer des super-héros selon leurs statistiques, à partir d’une API publique.
-                                        </p>
+                                        <p class="card-text">Rechercher, filtrer et comparer 563 personnages selon leurs statistiques de pouvoir, à partir d’une API publique.</p>
+                                        <p class="card-text small text-body-secondary mb-0">Projet de formation.</p>
                                     </div>
                                     <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap gap-2">
                                         <a class="btn btn-sm btn-primary" href="https://github.com/MiscuitAtlas/superheros-vue" target="_blank" rel="noopener noreferrer">
@@ -344,45 +445,20 @@
 
                             <article class="col">
                                 <div class="card h-100 project-card shadow-sm">
-                                    <button type="button" class="project-cover-btn" data-gallery-title="Jeu du 2048"
-                                        data-gallery='[{"src":"assets/img/projets/2048-jeu.webp","alt":"Partie en cours"},{"src":"assets/img/projets/2048-regles.webp","alt":"Règles du jeu"},{"src":"assets/img/projets/2048-parametres.webp","alt":"Paramètres de la partie"}]'>
-                                        <img src="assets/img/projets/2048-jeu.webp" alt="Partie de 2048 sur téléphone" class="project-cover project-cover--contain" width="318" height="712" loading="lazy">
-                                        <span class="project-cover-hint"><i class="fa-solid fa-images" aria-hidden="true"></i> 3 captures</span>
-                                    </button>
-                                    <div class="card-body">
-                                        <h4 class="h5 card-title">Jeu du 2048</h4>
-                                        <ul class="tech-badges mb-3">
-                                            <li>Flutter</li><li>Dart</li>
-                                        </ul>
-                                        <p class="card-text mb-0">
-                                            Le 2048 sur mobile : déplacement au doigt ou au clavier, annulation du dernier coup, meilleur score sauvegardé et paramètres personnalisables.
-                                        </p>
-                                    </div>
-                                    <div class="card-footer bg-transparent border-0 pt-0 pb-3">
-                                        <a class="btn btn-sm btn-primary" href="https://github.com/MiscuitAtlas/Jeu_2048_Flutter" target="_blank" rel="noopener noreferrer">
-                                            <i class="fa-brands fa-github" aria-hidden="true"></i> Code source
-                                        </a>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="col">
-                                <div class="card h-100 project-card shadow-sm">
-                                    <button type="button" class="project-cover-btn" data-gallery-title="Ce portfolio"
-                                        data-gallery='[{"src":"assets/img/apercu.webp","alt":"Page d’accueil du portfolio"}]'>
-                                        <img src="assets/img/apercu.webp" alt="Page d’accueil du portfolio" class="project-cover" width="1366" height="900" loading="lazy">
+                                    <button type="button" class="project-cover-btn" data-gallery-title="Ce site, mon premier portfolio"
+                                        data-gallery='[{"src":"assets/img/apercu.webp","alt":"Page d’accueil de ce portfolio"}]'>
+                                        <img src="assets/img/apercu.webp" alt="Page d’accueil de ce portfolio" class="project-cover" width="1366" height="900" loading="lazy">
                                         <span class="project-cover-hint"><i class="fa-solid fa-image" aria-hidden="true"></i> 1 capture</span>
                                     </button>
                                     <div class="card-body">
-                                        <h4 class="h5 card-title">Ce portfolio</h4>
+                                        <h4 class="h5 card-title">Ce site, mon premier portfolio</h4>
                                         <ul class="tech-badges mb-3">
                                             <li>HTML</li><li>CSS</li><li>Bootstrap 5</li><li>JavaScript</li>
                                         </ul>
-                                        <p class="card-text mb-0">
-                                            Site codé à la main et hébergé sur GitHub Pages, avec une politique de sécurité du contenu (CSP) stricte et des bibliothèques vérifiées par SRI.
-                                        </p>
+                                        <p class="card-text">La première version de mon portfolio, codée à la main et hébergée sur GitHub Pages, avec une politique de sécurité du contenu stricte et des bibliothèques vérifiées par SRI. Elle n’est plus mise à jour.</p>
+                                        <p class="card-text small text-body-secondary mb-0">Projet personnel.</p>
                                     </div>
-                                    <div class="card-footer bg-transparent border-0 pt-0 pb-3">
+                                    <div class="card-footer bg-transparent border-0 pt-0 pb-3 d-flex flex-wrap gap-2">
                                         <a class="btn btn-sm btn-primary" href="https://github.com/MiscuitAtlas/portfolio-bootstrap" target="_blank" rel="noopener noreferrer">
                                             <i class="fa-brands fa-github" aria-hidden="true"></i> Code source
                                         </a>
