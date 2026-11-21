@@ -19,7 +19,7 @@ La première version de mon portfolio, codée à la main en HTML, CSS, Bootstrap
 
 - Content Security Policy stricte : aucun script ni style écrit dans les pages, seuls le site et jsDelivr peuvent fournir du code.
 - Subresource Integrity (SRI) sur Bootstrap et Font Awesome : le navigateur vérifie leur empreinte avant de les exécuter.
-- Aucun numéro de téléphone ni adresse email publiés : le contact passe par le formulaire.
+- Le contact passe par le formulaire : mon numéro de téléphone et mon email ne figurent que dans le CV.
 
 ## Lancer le site en local
 
